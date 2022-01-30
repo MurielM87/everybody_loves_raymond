@@ -1,0 +1,19 @@
+{
+  "name": "everybody_loves_raymond",
+  "version": "1.0.0",
+  "description": "serie tout le monde aime raymond",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch .main.scss:.style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MurielM87/everybody_loves-raymond.git"
+  },
+  "author": "Muriel Marchal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MurielM87/everybody_loves-raymond/issues"
+  },
+  "homepage": "https://github.com/MurielM87/everybody_loves-raymond#readme"
+}
