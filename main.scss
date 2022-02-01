@@ -1,5 +1,9 @@
+@use "./sass/utils/responsive.scss" ;
+@use "./sass/utils/variable.scss" ; 
+@use "./sass/utils/mixins.scss" ; 
+
 @use "./sass/base/body.scss" ; 
 @use "./sass/base/font-family.scss" ; 
 @use "./sass/base/normalize.scss" ; 
 
-@use "./sass/utils/responsive.scss" ;
+@use "./sass/pages/personnages_secondaires.scss" ; 
