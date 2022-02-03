@@ -1,9 +1,9 @@
-@use "./sass/utils/responsive.scss" ;
-@use "./sass/utils/variable.scss" ; 
-@use "./sass/utils/mixins.scss" ; 
+@import "./sass/utils/responsive.scss" ;
+@import"./sass/utils/variable.scss" ; 
+@import "./sass/utils/mixins.scss" ; 
 
-@use "./sass/base/body.scss" ; 
-@use "./sass/base/font-family.scss" ; 
-@use "./sass/base/normalize.scss" ; 
+@import"./sass/base/body.scss" ; 
+@import "./sass/base/font-family.scss" ; 
+@import "./sass/base/normalize.scss" ; 
 
-@use "./sass/pages/personnages_secondaires.scss" ; 
+@import "./sass/pages/personnages_secondaires.scss" ; 

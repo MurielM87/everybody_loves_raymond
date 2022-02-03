@@ -1,3 +1,17 @@
 #personnages_secondaires {
-    @include flex-center-column ;  
+    @include flex-center-column ; 
+
+    h3 {
+        font-size : $font-size3 ; 
+        font-weight : bold ; 
+        text-align : center ; 
+    }
+    
+    #famille_debra, #famille_amy {
+        @include flex-center-column ;
+
+        .famille {
+            @include flex-center-row ; 
+        }
+    }
 }
