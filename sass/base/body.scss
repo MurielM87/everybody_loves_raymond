@@ -15,9 +15,7 @@ body {
 .container {
     width : 100% ;
     margin : auto ; 
-    background-color : $secondary_background ;
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         width : 1394px ;
-        background-color : $primary_background ;
     }
 }

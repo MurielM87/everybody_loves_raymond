@@ -1,18 +1,48 @@
-/* Error: Undefined variable.
- *    ,
- * 18 |     background-color : $secondary_background ;
- *    |                        ^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   sass\base\body.scss 18:24  @import
- *   main.scss 5:8              root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 18 \2502      background-color : $secondary_background ;\d\a    \2502                         ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\base\\body.scss 18:24  @import\a   main.scss 5:8              root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Raleway:wght@300&display=swap");
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 12px;
+  color: #000000;
+  background: linear-gradient(red, orange, yellow);
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1394px;
+  }
+}
+
+#personnages_secondaires {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#personnages_secondaires h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+#personnages_secondaires #famille_debra, #personnages_secondaires #famille_amy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#personnages_secondaires #famille_debra .famille, #personnages_secondaires #famille_amy .famille {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=.style.css.map */
