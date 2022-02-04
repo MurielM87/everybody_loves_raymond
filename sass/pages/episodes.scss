@@ -1,0 +1,23 @@
+#episodes {
+    @include flex-center-column ; 
+
+    .dvd {
+        @include flex-center-row ; 
+
+        .saison {
+            box-shadow: 0 4px 8px #C6C6C6;
+            width : 10% ; 
+            height : 150px ; 
+
+            a {
+                text-decoration : none ; 
+            }
+
+            .dvd_photo {
+                width : 100% ; 
+                height : 80% ; 
+                object-fit: cover ;
+            }
+        }
+    }
+}
