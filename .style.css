@@ -40,20 +40,12 @@ header nav {
   justify-content: center;
 }
 
-header h1 {
-  color: red;
+footer {
+  background-color: #161616;
+  color: #F6F6F6;
 }
-header h2 {
-  color: orange;
-}
-header #photo_groupe {
-  width: 45%;
-  height: 300px;
-}
-header nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+footer .container {
+  width: 100%;
 }
 
 #personnages_secondaires {
