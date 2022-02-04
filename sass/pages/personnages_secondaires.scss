@@ -12,6 +12,24 @@
 
         .famille {
             @include flex-center-row ; 
+
+            #debra_mere, #debra_pere, #amy_mere, #amy_pere, #amy_frere {
+                color : blue ; 
+
+                #presentation_lois, #presentation_warren, #presentation_pat, #presentation_hank, #presentation_peter {
+                    color : peru ; 
+                    width : 30% ; 
+                    height : 300px ; 
+
+                    .carte_recto {
+                        color : orange ; 
+                    }
+                    
+                    .carte_verso {
+                        color : red ; 
+                    }
+                }
+            }
         }
     }
 }
