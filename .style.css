@@ -48,6 +48,29 @@ footer .container {
   width: 100%;
 }
 
+#personnages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#personnages h3 {
+  font-size: 25px;
+  color: #ec0f0f;
+}
+#personnages #personnage_ray, #personnages #personnage_debra, #personnages #personnage_marie, #personnages #personnage_frank, #personnages #personnage_robert, #personnages #personnage_amy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 8px #E6E6E6;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+#personnages #personnage_ray h4, #personnages #personnage_debra h4, #personnages #personnage_marie h4, #personnages #personnage_frank h4, #personnages #personnage_robert h4, #personnages #personnage_amy h4 {
+  color: turquoise;
+  font-size: 20px;
+}
+
 #personnages_secondaires {
   display: flex;
   flex-direction: column;
