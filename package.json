@@ -4,7 +4,7 @@
   "description": "serie tout le monde aime raymond",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./main.scss:.style.css"
+    "sass": "sass --watch ./sass/main.scss:.style.css"
   },
   "repository": {
     "type": "git",

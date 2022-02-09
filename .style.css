@@ -42,7 +42,7 @@ header nav {
 
 footer {
   background-color: #161616;
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 footer .container {
   width: 100%;
@@ -57,18 +57,33 @@ footer .container {
   font-size: 25px;
   color: #ec0f0f;
 }
-#personnages #personnage_ray, #personnages #personnage_debra, #personnages #personnage_marie, #personnages #personnage_frank, #personnages #personnage_robert, #personnages #personnage_amy {
+#personnages #personnage_ray,
+#personnages #personnage_debra,
+#personnages #personnage_marie,
+#personnages #personnage_frank,
+#personnages #personnage_robert,
+#personnages #personnage_amy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 4px 8px #E6E6E6;
+  box-shadow: 0 4px 8px #e6e6e6;
   width: 300px;
   margin: auto;
   text-align: center;
 }
-#personnages #personnage_ray h4, #personnages #personnage_debra h4, #personnages #personnage_marie h4, #personnages #personnage_frank h4, #personnages #personnage_robert h4, #personnages #personnage_amy h4 {
+#personnages #personnage_ray h4,
+#personnages #personnage_debra h4,
+#personnages #personnage_marie h4,
+#personnages #personnage_frank h4,
+#personnages #personnage_robert h4,
+#personnages #personnage_amy h4 {
   color: turquoise;
   font-size: 20px;
+}
+
+#acteurs h3 {
+  color: orangered;
+  font-size: 15px;
 }
 
 #personnages_secondaires {
@@ -82,24 +97,84 @@ footer .container {
   font-weight: bold;
   text-align: center;
 }
-#personnages_secondaires #famille_debra, #personnages_secondaires #famille_amy {
+#personnages_secondaires #famille_debra,
+#personnages_secondaires #famille_amy {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#personnages_secondaires #famille_debra .famille, #personnages_secondaires #famille_amy .famille {
+#personnages_secondaires #famille_debra .famille,
+#personnages_secondaires #famille_amy .famille {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-#personnages_secondaires #famille_debra .famille #debra_mere, #personnages_secondaires #famille_debra .famille #debra_pere, #personnages_secondaires #famille_debra .famille #amy_mere, #personnages_secondaires #famille_debra .famille #amy_pere, #personnages_secondaires #famille_debra .famille #amy_frere, #personnages_secondaires #famille_amy .famille #debra_mere, #personnages_secondaires #famille_amy .famille #debra_pere, #personnages_secondaires #famille_amy .famille #amy_mere, #personnages_secondaires #famille_amy .famille #amy_pere, #personnages_secondaires #famille_amy .famille #amy_frere {
+#personnages_secondaires #famille_debra .famille #debra_mere,
+#personnages_secondaires #famille_debra .famille #debra_pere,
+#personnages_secondaires #famille_debra .famille #amy_mere,
+#personnages_secondaires #famille_debra .famille #amy_pere,
+#personnages_secondaires #famille_debra .famille #amy_frere,
+#personnages_secondaires #famille_amy .famille #debra_mere,
+#personnages_secondaires #famille_amy .famille #debra_pere,
+#personnages_secondaires #famille_amy .famille #amy_mere,
+#personnages_secondaires #famille_amy .famille #amy_pere,
+#personnages_secondaires #famille_amy .famille #amy_frere {
   background-color: transparent;
   width: 300px;
   height: 200px;
   border: 1px solid #ec8c0f;
   perspective: 1000px;
 }
-#personnages_secondaires #famille_debra .famille #debra_mere #presentation_lois, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_warren, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_pat, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_hank, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_peter, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_lois, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_warren, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_pat, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_hank, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_peter, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_lois, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_warren, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_pat, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_hank, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_peter, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_lois, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_warren, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_pat, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_hank, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_peter, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_lois, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_warren, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_pat, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_hank, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_peter, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_lois, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_warren, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_pat, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_hank, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_peter, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_lois, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_warren, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_pat, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_hank, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_peter, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_lois, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_warren, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_pat, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_hank, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_peter, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_lois, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_warren, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_pat, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_hank, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_peter, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_lois, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_warren, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_pat, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_hank, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_peter {
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_lois,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_warren,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_pat,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_hank,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_peter,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_lois,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_warren,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_pat,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_hank,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_peter,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_warren,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_pat,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_hank,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_peter,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_warren,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_pat,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_hank,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_peter,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_warren,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_pat,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_hank,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_peter,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_lois,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_warren,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_pat,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_hank,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_peter,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_lois,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_warren,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_pat,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_hank,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_peter,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_warren,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_pat,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_hank,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_peter,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_warren,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_pat,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_hank,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_peter,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_warren,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_pat,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_hank,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_peter {
   position: relative;
   width: 100%;
   height: 100%;
@@ -107,10 +182,158 @@ footer .container {
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-#personnages_secondaires #famille_debra .famille #debra_mere #presentation_lois .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_warren .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_pat .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_hank .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_peter .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_lois .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_warren .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_pat .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_hank .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_peter .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_lois .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_warren .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_pat .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_hank .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_peter .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_lois .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_warren .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_pat .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_hank .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_peter .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_lois .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_warren .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_pat .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_hank .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_peter .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_lois .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_warren .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_pat .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_hank .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_peter .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_lois .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_warren .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_pat .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_hank .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_peter .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_lois .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_warren .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_pat .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_hank .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_peter .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_lois .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_warren .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_pat .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_hank .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_peter .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_lois .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_warren .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_pat .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_hank .debra_mere:hover .presentation_lois, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_peter .debra_mere:hover .presentation_lois {
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_lois .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_warren .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_pat .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_hank .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_peter .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_lois .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_warren .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_pat .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_hank .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_peter .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_lois .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_warren .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_pat .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_hank .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_peter .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_lois .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_warren .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_pat .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_hank .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_peter .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_lois .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_warren .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_pat .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_hank .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_peter .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_lois .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_warren .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_pat .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_hank .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_peter .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_lois .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_warren .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_pat .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_hank .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_peter .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_lois .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_warren .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_pat .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_hank .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_peter .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_lois .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_warren .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_pat .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_hank .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_peter .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_lois .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_warren .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_pat .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_hank .debra_mere:hover .presentation_lois,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_peter .debra_mere:hover .presentation_lois {
   transform: rotateY(180deg);
 }
-#personnages_secondaires #famille_debra .famille #debra_mere #presentation_lois .carte_recto, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_lois .carte_verso, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_warren .carte_recto, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_warren .carte_verso, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_pat .carte_recto, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_pat .carte_verso, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_hank .carte_recto, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_hank .carte_verso, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_peter .carte_recto, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_peter .carte_verso, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_lois .carte_recto, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_lois .carte_verso, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_warren .carte_recto, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_warren .carte_verso, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_pat .carte_recto, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_pat .carte_verso, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_hank .carte_recto, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_hank .carte_verso, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_peter .carte_recto, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_peter .carte_verso, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_lois .carte_recto, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_lois .carte_verso, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_warren .carte_recto, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_warren .carte_verso, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_pat .carte_recto, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_pat .carte_verso, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_hank .carte_recto, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_hank .carte_verso, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_peter .carte_recto, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_peter .carte_verso, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_lois .carte_recto, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_lois .carte_verso, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_warren .carte_recto, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_warren .carte_verso, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_pat .carte_recto, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_pat .carte_verso, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_hank .carte_recto, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_hank .carte_verso, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_peter .carte_recto, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_peter .carte_verso, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_lois .carte_recto, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_lois .carte_verso, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_warren .carte_recto, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_warren .carte_verso, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_pat .carte_recto, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_pat .carte_verso, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_hank .carte_recto, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_hank .carte_verso, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_peter .carte_recto, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_peter .carte_verso, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_lois .carte_recto, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_lois .carte_verso, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_warren .carte_recto, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_warren .carte_verso, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_pat .carte_recto, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_pat .carte_verso, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_hank .carte_recto, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_hank .carte_verso, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_peter .carte_recto, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_peter .carte_verso, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_lois .carte_recto, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_lois .carte_verso, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_warren .carte_recto, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_warren .carte_verso, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_pat .carte_recto, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_pat .carte_verso, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_hank .carte_recto, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_hank .carte_verso, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_peter .carte_recto, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_peter .carte_verso, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_lois .carte_recto, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_lois .carte_verso, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_warren .carte_recto, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_warren .carte_verso, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_pat .carte_recto, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_pat .carte_verso, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_hank .carte_recto, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_hank .carte_verso, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_peter .carte_recto, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_peter .carte_verso, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_lois .carte_recto, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_lois .carte_verso, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_warren .carte_recto, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_warren .carte_verso, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_pat .carte_recto, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_pat .carte_verso, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_hank .carte_recto, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_hank .carte_verso, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_peter .carte_recto, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_peter .carte_verso, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_lois .carte_recto, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_lois .carte_verso, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_warren .carte_recto, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_warren .carte_verso, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_pat .carte_recto, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_pat .carte_verso, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_hank .carte_recto, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_hank .carte_verso, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_peter .carte_recto, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_peter .carte_verso {
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_peter .carte_verso {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -118,11 +341,109 @@ footer .container {
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-#personnages_secondaires #famille_debra .famille #debra_mere #presentation_lois .carte_recto, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_warren .carte_recto, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_pat .carte_recto, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_hank .carte_recto, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_peter .carte_recto, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_lois .carte_recto, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_warren .carte_recto, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_pat .carte_recto, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_hank .carte_recto, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_peter .carte_recto, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_lois .carte_recto, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_warren .carte_recto, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_pat .carte_recto, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_hank .carte_recto, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_peter .carte_recto, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_lois .carte_recto, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_warren .carte_recto, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_pat .carte_recto, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_hank .carte_recto, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_peter .carte_recto, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_lois .carte_recto, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_warren .carte_recto, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_pat .carte_recto, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_hank .carte_recto, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_peter .carte_recto, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_lois .carte_recto, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_warren .carte_recto, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_pat .carte_recto, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_hank .carte_recto, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_peter .carte_recto, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_lois .carte_recto, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_warren .carte_recto, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_pat .carte_recto, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_hank .carte_recto, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_peter .carte_recto, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_lois .carte_recto, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_warren .carte_recto, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_pat .carte_recto, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_hank .carte_recto, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_peter .carte_recto, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_lois .carte_recto, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_warren .carte_recto, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_pat .carte_recto, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_hank .carte_recto, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_peter .carte_recto, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_lois .carte_recto, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_warren .carte_recto, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_pat .carte_recto, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_hank .carte_recto, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_peter .carte_recto {
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_peter .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_lois .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_warren .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_pat .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_hank .carte_recto,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_peter .carte_recto {
   background-color: peru;
   color: blue;
 }
-#personnages_secondaires #famille_debra .famille #debra_mere #presentation_lois .carte_verso, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_warren .carte_verso, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_pat .carte_verso, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_hank .carte_verso, #personnages_secondaires #famille_debra .famille #debra_mere #presentation_peter .carte_verso, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_lois .carte_verso, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_warren .carte_verso, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_pat .carte_verso, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_hank .carte_verso, #personnages_secondaires #famille_debra .famille #debra_pere #presentation_peter .carte_verso, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_lois .carte_verso, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_warren .carte_verso, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_pat .carte_verso, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_hank .carte_verso, #personnages_secondaires #famille_debra .famille #amy_mere #presentation_peter .carte_verso, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_lois .carte_verso, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_warren .carte_verso, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_pat .carte_verso, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_hank .carte_verso, #personnages_secondaires #famille_debra .famille #amy_pere #presentation_peter .carte_verso, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_lois .carte_verso, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_warren .carte_verso, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_pat .carte_verso, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_hank .carte_verso, #personnages_secondaires #famille_debra .famille #amy_frere #presentation_peter .carte_verso, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_lois .carte_verso, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_warren .carte_verso, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_pat .carte_verso, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_hank .carte_verso, #personnages_secondaires #famille_amy .famille #debra_mere #presentation_peter .carte_verso, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_lois .carte_verso, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_warren .carte_verso, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_pat .carte_verso, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_hank .carte_verso, #personnages_secondaires #famille_amy .famille #debra_pere #presentation_peter .carte_verso, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_lois .carte_verso, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_warren .carte_verso, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_pat .carte_verso, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_hank .carte_verso, #personnages_secondaires #famille_amy .famille #amy_mere #presentation_peter .carte_verso, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_lois .carte_verso, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_warren .carte_verso, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_pat .carte_verso, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_hank .carte_verso, #personnages_secondaires #famille_amy .famille #amy_pere #presentation_peter .carte_verso, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_lois .carte_verso, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_warren .carte_verso, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_pat .carte_verso, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_hank .carte_verso, #personnages_secondaires #famille_amy .famille #amy_frere #presentation_peter .carte_verso {
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_mere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_debra .famille #debra_pere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_mere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_pere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_debra .famille #amy_frere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_mere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_amy .famille #debra_pere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_mere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_pere #presentation_peter .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_lois .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_warren .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_pat .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_hank .carte_verso,
+#personnages_secondaires #famille_amy .famille #amy_frere #presentation_peter .carte_verso {
   background-color: yellow;
   color: green;
   transform: rotateY(180deg);
@@ -139,7 +460,7 @@ footer .container {
   justify-content: center;
 }
 #episodes .dvd .saison {
-  box-shadow: 0 4px 8px #C6C6C6;
+  box-shadow: 0 4px 8px #c6c6c6;
   width: 10%;
   height: 150px;
 }

@@ -1,55 +1,65 @@
 #personnages_secondaires {
-    @include flex-center-column ; 
+    @include flex-center-column;
 
     h3 {
-        font-size : $font-size3 ; 
-        color : $color1 ; 
-        font-weight : bold ; 
-        text-align : center ; 
+        font-size: $font-size3;
+        color: $color1;
+        font-weight: bold;
+        text-align: center;
     }
-    
-    #famille_debra, #famille_amy {
-        @include flex-center-column ;
+
+    #famille_debra,
+    #famille_amy {
+        @include flex-center-column;
 
         .famille {
-            @include flex-center-row ; 
+            @include flex-center-row;
 
-            #debra_mere, #debra_pere, #amy_mere, #amy_pere, #amy_frere {
-                background-color: transparent ;
-                width : 300px ; 
-                height : 200px ; 
-                border : 1px solid $color2 ; 
-                perspective : 1000px ; 
+            #debra_mere,
+            #debra_pere,
+            #amy_mere,
+            #amy_pere,
+            #amy_frere {
+                background-color: transparent;
+                width: 300px;
+                height: 200px;
+                border: 1px solid $color2;
+                perspective: 1000px;
 
-                #presentation_lois, #presentation_warren, #presentation_pat, #presentation_hank, #presentation_peter {
-                    position : relative ; 
-                    width : 100% ; 
-                    height : 100% ; 
-                    text-align : center ; 
-                    transition : transform 0.8s ; 
-                    transform-style : preserve-3d ; 
+                #presentation_lois,
+                #presentation_warren,
+                #presentation_pat,
+                #presentation_hank,
+                #presentation_peter {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    transition: transform 0.8s;
+                    transform-style: preserve-3d;
 
                     .debra_mere:hover .presentation_lois {
-                        transform : rotateY(180deg) ; 
+                        transform: rotateY(180deg);
                     }
-                    .carte_recto, .carte_verso {
-                        position : absolute ; 
-                        width : 100% ; 
-                        height : 100% ; 
-                            -webkit-backface-visibility : hidden ; 
-                            -moz-backface-visibility : hidden ; 
-                        backface-visibility : hidden ; 
+                    .carte_recto,
+                    .carte_verso {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        -webkit-backface-visibility: hidden;
+                        -moz-backface-visibility: hidden;
+                        backface-visibility: hidden;
                     }
 
                     .carte_recto {
-                        background-color : peru ; 
-                        color : blue ; 
+                        background-color: peru;
+                        color: blue;
                     }
 
                     .carte_verso {
-                        background-color: yellow ;
-                        color : green ; 
-                        transform : rotateY(180deg) ; 
+                        background-color: yellow;
+                        color: green;
+                        transform: rotateY(180deg);
                     }
                 }
             }

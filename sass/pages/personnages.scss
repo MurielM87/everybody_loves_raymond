@@ -1,21 +1,26 @@
 #personnages {
-    @include flex-center-column ;
+    @include flex-center-column;
 
     h3 {
-        font-size : $font-size1 ; 
-        color : $color1 ; 
+        font-size: $font-size1;
+        color: $color1;
     }
 
-    #personnage_ray, #personnage_debra, #personnage_marie, #personnage_frank, #personnage_robert, #personnage_amy {
-        @include flex-center-column ; 
-        box-shadow: 0 4px 8px #E6E6E6 ;
-        width : 300px ; 
-        margin : auto ; 
-        text-align : center ; 
+    #personnage_ray,
+    #personnage_debra,
+    #personnage_marie,
+    #personnage_frank,
+    #personnage_robert,
+    #personnage_amy {
+        @include flex-center-column;
+        box-shadow: 0 4px 8px #e6e6e6;
+        width: 300px;
+        margin: auto;
+        text-align: center;
 
         h4 {
-            color : turquoise ; 
-            font-size : $font-size2
+            color: turquoise;
+            font-size: $font-size2;
         }
     }
 }

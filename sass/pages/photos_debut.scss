@@ -1,10 +1,15 @@
 #photos {
-    display : flex ; 
-    flex-direction : row ; 
+    display: flex;
+    flex-direction: row;
 
-    .photo_ray, .photo_debra, .photo_marie, .photo_frank, .photo_robert, .photo_amy {
-        width : 13% ; 
-        height : 200px ; 
-        border : solid 3px $primary_color ;
+    .photo_ray,
+    .photo_debra,
+    .photo_marie,
+    .photo_frank,
+    .photo_robert,
+    .photo_amy {
+        width: 13%;
+        height: 200px;
+        border: solid 3px $primary_color;
     }
 }
