@@ -11,7 +11,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 12px;
   color: #000000;
-  background: linear-gradient(red, orange, yellow);
+  background: linear-gradient(yellow, orange, red);
 }
 
 .container {
@@ -28,16 +28,29 @@ header h1 {
   color: #000000;
 }
 header h2 {
-  color: orange;
+  color: red;
 }
 header #photo_groupe {
   width: 45%;
   height: 300px;
+  margin: auto;
 }
 header nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+header nav .menu {
+  list-style-type: square;
+}
+header nav .menu a {
+  color: black;
+  text-decoration: none;
+}
+header nav .menu:hover {
+  cursor: pointer;
+  color: red;
+  text-decoration: dashed yellow;
 }
 
 footer {
@@ -473,4 +486,4 @@ footer .container {
   object-fit: cover;
 }
 
-/*# sourceMappingURL=.style.css.map */
+/*# sourceMappingURL=style.css.map */

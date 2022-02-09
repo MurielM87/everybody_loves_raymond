@@ -4,15 +4,28 @@ header {
     }
 
     h2 {
-        color: orange;
+        color: red;
     }
 
     #photo_groupe {
         width: 45%;
         height: 300px;
+        margin: auto;
     }
 
     nav {
         @include flex-center-row;
+        .menu{
+            list-style-type: square;
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            &:hover {
+                cursor: pointer;
+                color: red;
+                text-decoration:dashed yellow;
+            }
+        }
     }
 }

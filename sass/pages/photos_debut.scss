@@ -8,8 +8,17 @@
     .photo_frank,
     .photo_robert,
     .photo_amy {
-        width: 13%;
-        height: 200px;
-        border: solid 3px $primary_color;
+        display: flex;
+        flex-direction: column;
+        .ray,
+        .debra,
+        .marie,
+        .frank,
+        .robert,
+        .amy {
+            width: 13%;
+            height: 200px;
+            border: solid 3px $primary_color;
+        }
     }
 }
