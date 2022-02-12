@@ -38,7 +38,11 @@
                     transition: transform 0.8s;
                     transform-style: preserve-3d;
 
-                    .debra_mere:hover .presentation_lois {
+                    #debra_mere:hover #presentation_lois,
+                    #debra_pere:hover #presentation_warren,
+                    #amy_mere:hover #presentation_pat,
+                    #amy_pere:hover #presentation_hank,
+                    #amy_frere:hover #presentation_peter {
                         transform: rotateY(180deg);
                     }
                     .carte_recto,
