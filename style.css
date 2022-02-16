@@ -177,6 +177,30 @@ footer .container {
 #acteurs h3 {
   color: orangered;
   font-size: 15px;
+  margin-top: 30px;
+}
+#acteurs .acteurs {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+#acteurs .acteurs .acteur-ray,
+#acteurs .acteurs .acteur_marie,
+#acteurs .acteurs .acteur_robert {
+  display: flex;
+  flex-direction: row;
+}
+#acteurs .acteurs .acteur-ray .acteur_photo,
+#acteurs .acteurs .acteur_marie .acteur_photo,
+#acteurs .acteurs .acteur_robert .acteur_photo {
+  width: 30%;
+  height: 300px;
+}
+#acteurs .acteurs .acteur_debra,
+#acteurs .acteurs .acteur_frank,
+#acteurs .acteurs .acteur_amy {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 #personnages_secondaires {

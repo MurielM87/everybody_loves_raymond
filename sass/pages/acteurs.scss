@@ -2,5 +2,31 @@
     h3 {
         color: orangered;
         font-size: 15px;
+        margin-top: 30px;
+    }
+
+    .acteurs {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+
+        .acteur-ray, 
+        .acteur_marie, 
+        .acteur_robert {
+            display: flex;
+            flex-direction: row;
+
+            .acteur_photo {
+                width: 30%;
+                height: 300px;
+            }
+        }
+
+        .acteur_debra,
+        .acteur_frank,
+        .acteur_amy {
+            display: flex;
+            flex-direction: row-reverse;
+        }
     }
 }
