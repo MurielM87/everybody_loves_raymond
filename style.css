@@ -76,6 +76,71 @@ footer .container {
   width: 100%;
 }
 
+#photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+}
+#photos #photo_ray,
+#photos #photo_debra,
+#photos #photo_marie,
+#photos #photo_frank,
+#photos #photo_robert,
+#photos #photo_amy {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 350px;
+  border: solid 3px #ec8c0f;
+}
+#photos #photo_ray .ray,
+#photos #photo_ray .debra,
+#photos #photo_ray .marie,
+#photos #photo_ray .frank,
+#photos #photo_ray .robert,
+#photos #photo_ray .amy,
+#photos #photo_debra .ray,
+#photos #photo_debra .debra,
+#photos #photo_debra .marie,
+#photos #photo_debra .frank,
+#photos #photo_debra .robert,
+#photos #photo_debra .amy,
+#photos #photo_marie .ray,
+#photos #photo_marie .debra,
+#photos #photo_marie .marie,
+#photos #photo_marie .frank,
+#photos #photo_marie .robert,
+#photos #photo_marie .amy,
+#photos #photo_frank .ray,
+#photos #photo_frank .debra,
+#photos #photo_frank .marie,
+#photos #photo_frank .frank,
+#photos #photo_frank .robert,
+#photos #photo_frank .amy,
+#photos #photo_robert .ray,
+#photos #photo_robert .debra,
+#photos #photo_robert .marie,
+#photos #photo_robert .frank,
+#photos #photo_robert .robert,
+#photos #photo_robert .amy,
+#photos #photo_amy .ray,
+#photos #photo_amy .debra,
+#photos #photo_amy .marie,
+#photos #photo_amy .frank,
+#photos #photo_amy .robert,
+#photos #photo_amy .amy {
+  width: 100%;
+  height: 300px;
+}
+
+#histoire h3 {
+  color: #ec0f0f;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
 #personnages {
   display: flex;
   flex-direction: column;

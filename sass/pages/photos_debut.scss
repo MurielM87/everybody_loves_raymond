@@ -1,24 +1,26 @@
 #photos {
-    display: flex;
-    flex-direction: row;
+    @include flex-center-row;
+    margin-top: 40px;
 
-    .photo_ray,
-    .photo_debra,
-    .photo_marie,
-    .photo_frank,
-    .photo_robert,
-    .photo_amy {
+    #photo_ray,
+    #photo_debra,
+    #photo_marie,
+    #photo_frank,
+    #photo_robert,
+    #photo_amy {
         display: flex;
         flex-direction: column;
+        width: 15%;
+        height: 350px;        
+        border: solid 3px $color2;
         .ray,
         .debra,
         .marie,
         .frank,
         .robert,
         .amy {
-            width: 13%;
-            height: 200px;
-            border: solid 3px $primary_color;
+            width: 100%;
+            height: 300px;
         }
     }
 }
