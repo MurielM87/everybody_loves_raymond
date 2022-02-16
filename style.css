@@ -24,33 +24,48 @@ body {
   }
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(red, orange, yellow);
+}
 header h1 {
   color: #000000;
+  font-size: 30px;
 }
 header h2 {
-  color: red;
+  color: #000000;
+  font-size: 20px;
 }
 header #photo_groupe {
-  width: 45%;
-  height: 300px;
-  margin: auto;
+  width: 40%;
+  height: 400px;
+  margin: 15px 0px;
 }
 header nav {
+  width: 90%;
+}
+header nav #menu {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-header nav .menu {
-  list-style-type: square;
+header nav #menu li {
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
-header nav .menu a {
+header nav #menu a {
   color: black;
   text-decoration: none;
 }
-header nav .menu:hover {
+header nav #menu a:hover {
   cursor: pointer;
   color: red;
-  text-decoration: dashed yellow;
+  text-decoration: dashed 3px yellow;
 }
 
 footer {
