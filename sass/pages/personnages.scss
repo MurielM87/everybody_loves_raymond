@@ -1,43 +1,49 @@
 #personnages {
     @include flex-center-column;
-    margin-top : 20px;
+    flex-wrap : wrap;
+    margin : 20px;
 
     h3 {
         font-size: $font-size1;
-        color: $color1;
-    }
-
-    #personnage_ray,
-    #personnage_debra,
-    #personnage_marie,
-    #personnage_frank,
-    #personnage_robert,
-    #personnage_amy {
-        @include flex-center-column;
-        box-shadow: 0 4px 8px #e6e6e6;
-        border: solid 2px #000000; 
-        width: 300px;
-        height: 400px;
-        margin: auto;
+        color: #000000;
         text-align: center;
-        margin-bottom: 20px;
+    }
+    #disposition_personnages {
+        @include flex-center-row;
+        flex-wrap: wrap;
+    
+        #personnage_ray,
+        #personnage_debra,
+        #personnage_marie,
+        #personnage_frank,
+        #personnage_robert,
+        #personnage_amy {
+            @include flex-center-column;
+            box-shadow: 0 4px 8px #e6e6e6;
+            border: solid 2px #000000; 
+            width: 300px;
+            height: 400px;
+            margin: auto;
+            text-align: center;
+            margin: 30px;
 
-        .photo_personnage {
+            .photo_personnage {
             width: 100%;
             height: 350px;
             object-fit: cover;
-        }
+            }
 
-        h4 {
+            h4 {
             color: red;
             font-size: $font-size2;
             padding-top: 10px;
-        }
+            }
 
-        p {
+            p {
             color: #000000;
             font-size: $font-size3;
             padding: 10px 0px;
+            }
         }
     }
 }

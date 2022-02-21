@@ -5,13 +5,13 @@ header {
     h1 {
         color: #000000;
         font-family: sacramento, Arial, Helvetica, sans-serif;
-        font-size: 40px;
+        font-size: 70px;
         text-align: center;
     }
 
     h2 {
         color: #000000;
-        font-size: 20px;
+        font-size: 30px;
         font-family: Alex+Brush, Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
     }
@@ -24,11 +24,11 @@ header {
 
     nav {
        width: 90%;
+       margin-bottom: 30px;
         #menu{
             list-style-type: none;
-            @include flex-center-row;
+            @include flex-space-around-row;
             li {
-                margin-right: 10px;
                 font-size: 20px;
                 font-weight: bold;
             }

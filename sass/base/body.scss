@@ -5,11 +5,11 @@
 }
 
 body {
-    font-size: 15px;
+    font-size: $font-size4;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 12px;
     color: #000000;
-    background: linear-gradient(yellow, orange, red);
+    background: linear-gradient($color3, $color2, $color1);
     background-attachment: fixed;
 }
 
