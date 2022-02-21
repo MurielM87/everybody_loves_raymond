@@ -252,7 +252,7 @@ footer .container {
 
 #acteurs h3 {
   color: orangered;
-  font-size: 15px;
+  font-size: 25px;
   margin-top: 30px;
 }
 #acteurs .acteurs {
@@ -260,24 +260,24 @@ footer .container {
   flex-direction: column;
   margin: 15px;
 }
-#acteurs .acteurs .acteur-ray,
+#acteurs .acteurs .acteur_ray,
 #acteurs .acteurs .acteur_marie,
 #acteurs .acteurs .acteur_robert {
   display: flex;
   flex-direction: row;
 }
-#acteurs .acteurs .acteur-ray h4,
+#acteurs .acteurs .acteur_ray h4,
 #acteurs .acteurs .acteur_marie h4,
 #acteurs .acteurs .acteur_robert h4 {
   text-align: center;
   color: #000000;
-  font-size: 20px;
+  font-size: 25px;
   font-family: caveat;
+  margin-bottom: 10px;
 }
-#acteurs .acteurs .acteur-ray .acteur_photo,
+#acteurs .acteurs .acteur_ray .acteur_photo,
 #acteurs .acteurs .acteur_marie .acteur_photo,
 #acteurs .acteurs .acteur_robert .acteur_photo {
-  width: 30%;
   height: 300px;
 }
 #acteurs .acteurs .acteur_debra,
@@ -286,6 +286,20 @@ footer .container {
   display: flex;
   flex-direction: row-reverse;
 }
+#acteurs .acteurs .acteur_debra h4,
+#acteurs .acteurs .acteur_frank h4,
+#acteurs .acteurs .acteur_amy h4 {
+  text-align: center;
+  color: #000000;
+  font-size: 20px;
+  font-family: caveat;
+  margin-bottom: 10px;
+}
+#acteurs .acteurs .acteur_debra .acteur_photo,
+#acteurs .acteurs .acteur_frank .acteur_photo,
+#acteurs .acteurs .acteur_amy .acteur_photo {
+  height: 300px;
+}
 
 #personnages_secondaires {
   display: flex;
@@ -293,10 +307,11 @@ footer .container {
   justify-content: center;
 }
 #personnages_secondaires h3 {
-  font-size: 18px;
+  font-size: 25px;
   color: #000000;
   font-weight: bold;
   padding: 20px 0px;
+  text-align: center;
 }
 #personnages_secondaires #famille_debra,
 #personnages_secondaires #famille_amy {

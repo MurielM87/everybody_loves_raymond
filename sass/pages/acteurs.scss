@@ -1,7 +1,7 @@
 #acteurs {
     h3 {
         color: orangered;
-        font-size: 15px;
+        font-size: 25px;
         margin-top: 30px;
     }
 
@@ -10,7 +10,7 @@
         flex-direction: column;
         margin: 15px;
 
-        .acteur-ray, 
+        .acteur_ray, 
         .acteur_marie, 
         .acteur_robert {
             display: flex;
@@ -19,11 +19,11 @@
             h4 {
                 text-align: center;
                 color: #000000;
-                font-size: 20px;
+                font-size: 25px;
                 font-family: caveat;
+                margin-bottom: 10px;
             }
             .acteur_photo {
-                width: 30%;
                 height: 300px;
             }
         }
@@ -33,6 +33,18 @@
         .acteur_amy {
             display: flex;
             flex-direction: row-reverse;
+
+            h4 {
+                text-align: center;
+                color: #000000;
+                font-size: 20px;
+                font-family: caveat;
+                margin-bottom: 10px;
+            }
+            
+            .acteur_photo {
+                height: 300px;
+            }
         }
     }
 }

@@ -2,10 +2,11 @@
     @include flex-center-column;
 
     h3 {
-        font-size: $font-size3;
+        font-size: $font-size1;
         color: #000000;
         font-weight: bold;
         padding: 20px 0px;
+        text-align: center;
     }
 
     #famille_debra,
