@@ -31,6 +31,7 @@ body {
   line-height: 12px;
   color: #000000;
   background: linear-gradient(yellow, orange, red);
+  background-attachment: fixed;
 }
 
 .container {
