@@ -28,7 +28,7 @@
 body {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 12px;
+  line-height: 20px;
   color: #000000;
   background: linear-gradient(#e8ec0f, #ec8c0f, #ec0f0f);
   background-attachment: fixed;
@@ -182,6 +182,7 @@ footer .container {
 }
 #histoire #resume {
   margin: 10px;
+  text-align: justify;
 }
 
 #personnages {
@@ -254,6 +255,7 @@ footer .container {
   color: orangered;
   font-size: 25px;
   margin-top: 30px;
+  text-align: center;
 }
 #acteurs .acteurs {
   display: flex;
@@ -266,19 +268,11 @@ footer .container {
   display: flex;
   flex-direction: row;
 }
-#acteurs .acteurs .acteur_ray h4,
-#acteurs .acteurs .acteur_marie h4,
-#acteurs .acteurs .acteur_robert h4 {
-  text-align: center;
-  color: #000000;
-  font-size: 25px;
-  font-family: caveat;
-  margin-bottom: 10px;
-}
 #acteurs .acteurs .acteur_ray .acteur_photo,
 #acteurs .acteurs .acteur_marie .acteur_photo,
 #acteurs .acteurs .acteur_robert .acteur_photo {
   height: 300px;
+  object-fit: cover;
 }
 #acteurs .acteurs .acteur_debra,
 #acteurs .acteurs .acteur_frank,
@@ -286,19 +280,11 @@ footer .container {
   display: flex;
   flex-direction: row-reverse;
 }
-#acteurs .acteurs .acteur_debra h4,
-#acteurs .acteurs .acteur_frank h4,
-#acteurs .acteurs .acteur_amy h4 {
-  text-align: center;
-  color: #000000;
-  font-size: 20px;
-  font-family: caveat;
-  margin-bottom: 10px;
-}
 #acteurs .acteurs .acteur_debra .acteur_photo,
 #acteurs .acteurs .acteur_frank .acteur_photo,
 #acteurs .acteurs .acteur_amy .acteur_photo {
   height: 300px;
+  object-fit: cover;
 }
 
 #personnages_secondaires {
@@ -652,6 +638,23 @@ footer .container {
   background-color: transparent;
   color: #000000;
   transform: rotateY(180deg);
+}
+
+.acteur_portrait {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.acteur_portrait h4 {
+  text-align: center;
+  color: #000000;
+  font-size: 25px;
+  font-family: caveat;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+.acteur_portrait {
+    @include flex-center-row;
+
+    h4 {
+        text-align: center;
+        color: #000000;
+        font-size: 25px;
+        font-family: caveat;
+        margin-bottom: 10px;
+    }
+}
+
+    p {
+        text-align: justify;
+    }
+
+
