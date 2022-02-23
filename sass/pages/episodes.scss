@@ -13,10 +13,22 @@
                 text-decoration: none;
             }
 
+            h4,
+            p {
+                display: none;
+            }
+
             .dvd_photo {
                 width: 100%;
                 height: 80%;
                 object-fit: cover;
+
+                &hover {
+                    h4,
+                    p {
+                        display: content;
+                    }
+                }
             }
         }
     }

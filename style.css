@@ -350,10 +350,18 @@ footer .container {
 #episodes .dvd .saison a {
   text-decoration: none;
 }
+#episodes .dvd .saison h4,
+#episodes .dvd .saison p {
+  display: none;
+}
 #episodes .dvd .saison .dvd_photo {
   width: 100%;
   height: 80%;
   object-fit: cover;
+}
+#episodes .dvd .saison .dvd_photohover h4,
+#episodes .dvd .saison .dvd_photohover p {
+  display: content;
 }
 
 .quiz_clicked {
