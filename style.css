@@ -356,6 +356,12 @@ footer .container {
   object-fit: cover;
 }
 
+.quiz_clicked {
+  background: green;
+  border: 4px solid turquoise;
+  border-radius: 30px;
+}
+
 #debra_mere,
 #debra_pere,
 #amy_mere,

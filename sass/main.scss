@@ -1,20 +1,21 @@
-@import "./utils/responsive.scss" ;
-@import "./utils/variable.scss" ; 
-@import "./utils/mixins.scss" ; 
+@import "./utils/responsive.scss";
+@import "./utils/variable.scss";
+@import "./utils/mixins.scss";
 
-@import "./base/body.scss" ; 
-@import "./base/font-family.scss" ; 
-@import "./base/normalize.scss" ; 
+@import "./base/body.scss";
+@import "./base/font-family.scss";
+@import "./base/normalize.scss";
 
-@import "./layout/header.scss" ; 
-@import "./layout/footer.scss" ; 
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
 
 @import "./pages/photos_debut.scss";
 @import "./pages/histoire.scss";
-@import "./pages/personnages.scss" ; 
-@import "./pages/acteurs.scss" ; 
-@import "./pages/personnages_secondaires.scss" ; 
-@import "./pages/episodes.scss" ;
+@import "./pages/personnages.scss";
+@import "./pages/acteurs.scss";
+@import "./pages/personnages_secondaires.scss";
+@import "./pages/episodes.scss";
+@import "./pages/quiz.scss";
 
 @import "./themes/cartes_personnages_secondaires.scss";
 @import "./themes/cartes_acteurs.scss";
