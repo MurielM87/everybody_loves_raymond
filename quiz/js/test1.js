@@ -1,4 +1,4 @@
-//scroll event
+//scroll event - pour que le navigateur reste en haut
 
 const nav = document.querySelector("nav");
 console.log(nav)
