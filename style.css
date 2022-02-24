@@ -203,6 +203,17 @@ footer .container {
   justify-content: center;
   flex-wrap: wrap;
 }
+#personnages #disposition_personnages .first_row,
+#personnages #disposition_personnages .second_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  #personnages #disposition_personnages .first_row,
+#personnages #disposition_personnages .second_row {
+    flex-wrap: no-wrap;
+  }
+}
 #personnages #disposition_personnages #personnage_ray,
 #personnages #disposition_personnages #personnage_debra,
 #personnages #disposition_personnages #personnage_marie,

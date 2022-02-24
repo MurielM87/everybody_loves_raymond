@@ -12,6 +12,14 @@
         @include flex-center-row;
         flex-wrap: wrap;
     
+        .first_row,
+        .second_row {
+            display: flex;
+            flex-wrap: wrap;
+            @media screen and (min-width: map-get($breakpoints, desktop)) {
+                flex-wrap: no-wrap;
+            }
+        }
         #personnage_ray,
         #personnage_debra,
         #personnage_marie,
