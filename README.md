@@ -8,10 +8,10 @@ utilisation :
 - Javascript
 
 structure du site : 
-- histoire
-- personnages
-- acteurs
-- personnages secondaires
-- épisodes
+- Histoire
+- Personnages
+- Acteurs
+- Personnages secondaires
+- Episodes
 - Quiz
 
