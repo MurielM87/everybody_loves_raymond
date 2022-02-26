@@ -4,10 +4,10 @@
     .dvd {
         @include flex-center-row;
 
-        .saison {
+        .season {
             box-shadow: 0 4px 8px #c6c6c6;
             width: 10%;
-            height: 150px;
+            margin-bottom: 15px;
 
             a {
                 text-decoration: none;

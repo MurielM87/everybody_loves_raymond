@@ -1,0 +1,116 @@
+#test {
+    width : 50%;
+
+    h3 {
+        font-size: 25px;
+        color: #000000;
+        text-align: center;
+    }
+
+    #btn_color1,
+    #btn_color2
+    #btn_color3,
+    #btn_color4,
+    #btn_color5,
+    #btn_color6 {
+        width: 25px;
+        height: 25px;
+    }
+    
+    #btn_color1 {
+        background-color: blue;
+        border: 1px solid black;
+    }
+    #btn_color2 {
+        background-color: red;
+    }
+    #btn_color3 {
+        background-color: green;
+    }
+    #btn_color4 {
+        background-color: yellow;
+    }
+    #btn_color5 {
+        background-color: purple;
+    }
+    #btn_color6 {
+        background-color: black;
+    }
+
+    #btn_food1,
+    #btn_food2,
+    #btn_food3,
+    #btn_food4,
+    #btn_food5,
+    #btn_food6 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #btn_animal1,
+    #btn_animal2,
+    #btn_animal3,
+    #btn_animal4,
+    #btn_animal5,
+    #btn_animal6{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #btn_caractere1,
+    #btn_caractere2,
+    #btn_caractere3,
+    #btn_caractere4,
+    #btn_caractere5,
+    #btn_caractere6{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #btn_country1,
+    #btn_country2,
+    #btn_country3,
+    #btn_country4,
+    #btn_country5,
+    #btn_country6{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #btn_activity1,
+    #btn_activity2,
+    #btn_activity3,
+    #btn_activity4,
+    #btn_activity5,
+    #btn_activity6{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #btn_house1,
+    #btn_house2,
+    #btn_house3,
+    #btn_house4,
+    #btn_house5,
+    #btn_house6{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #btn_object1,
+    #btn_object2,
+    #btn_object3,
+    #btn_object4,
+    #btn_object5,
+    #btn_object6{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #big_response {
+        background-color: yellow;
+        border: 3px solid red;
+        box-shadow: 3px 3px 3px orange;
+    }
+
+}

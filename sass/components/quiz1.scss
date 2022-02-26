@@ -1,0 +1,42 @@
+#questions {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    h3 {
+        font-size: 22px;
+        margin: 30px;
+    }
+    input {
+        margin: 10px;
+    }
+    .quiz_click {
+        margin-bottom: 10px;
+
+        h4 {
+            margin-bottom: 10px;
+        }
+        .response1,
+        .response2,
+        .response3,
+        .response4,
+        .response5 {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .big_response1,
+    .big_response2,
+    .big_response3,
+    .big_response4,
+    .big_response5,
+    .big_response6,
+    .big_response7,
+    .big_response8,
+    .big_response9,
+    .big_response10 {
+        margin : 20px;
+    }
+}

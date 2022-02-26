@@ -38,7 +38,7 @@ body {
   width: 100%;
   margin: auto;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: ) {
   .container {
     width: 1394px;
   }
@@ -56,6 +56,8 @@ header h1 {
   font-family: sacramento, Arial, Helvetica, sans-serif;
   font-size: 70px;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 header h2 {
   color: #000000;
@@ -64,8 +66,8 @@ header h2 {
   text-align: center;
 }
 header #photo_groupe {
-  width: 40%;
-  height: 400px;
+  width: 45%;
+  height: 550px;
   margin: 15px 0px;
 }
 header nav {
@@ -77,6 +79,13 @@ header nav #menu {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+@media (max-width: 767px) {
+  header nav #menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 header nav #menu li {
   font-size: 20px;
@@ -99,6 +108,12 @@ footer {
 footer .container {
   width: 100%;
 }
+footer .container div {
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 10px;
+}
 
 #photos {
   display: flex;
@@ -106,6 +121,13 @@ footer .container {
   justify-content: space-around;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+  #photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 #photos #photo_ray,
 #photos #photo_debra,
@@ -116,7 +138,7 @@ footer .container {
   display: flex;
   flex-direction: column;
   width: 10%;
-  height: 200px;
+  height: 260px;
   border: solid 3px #ec8c0f;
   align-items: center;
 }
@@ -157,7 +179,7 @@ footer .container {
 #photos #photo_amy .robert,
 #photos #photo_amy .amy {
   width: 100%;
-  height: 150px;
+  height: 240px;
   object-fit: cover;
 }
 #photos #photo_ray .nom,
@@ -181,8 +203,9 @@ footer .container {
   text-align: center;
 }
 #histoire #resume {
-  margin: 10px;
+  margin: 40px;
   text-align: justify;
+  font-size: 18px;
 }
 
 #personnages {
@@ -203,23 +226,29 @@ footer .container {
   justify-content: center;
   flex-wrap: wrap;
 }
+@media (max-width: 767px) {
+  #personnages #disposition_personnages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 #personnages #disposition_personnages .first_row,
 #personnages #disposition_personnages .second_row {
   display: flex;
-  flex-wrap: wrap;
 }
-@media screen and (min-width: 1000px) {
-  #personnages #disposition_personnages .first_row,
-#personnages #disposition_personnages .second_row {
-    flex-wrap: no-wrap;
-  }
-}
-#personnages #disposition_personnages #personnage_ray,
-#personnages #disposition_personnages #personnage_debra,
-#personnages #disposition_personnages #personnage_marie,
-#personnages #disposition_personnages #personnage_frank,
-#personnages #disposition_personnages #personnage_robert,
-#personnages #disposition_personnages #personnage_amy {
+#personnages #disposition_personnages .first_row #personnage_ray,
+#personnages #disposition_personnages .first_row #personnage_debra,
+#personnages #disposition_personnages .first_row #personnage_marie,
+#personnages #disposition_personnages .first_row #personnage_frank,
+#personnages #disposition_personnages .first_row #personnage_robert,
+#personnages #disposition_personnages .first_row #personnage_amy,
+#personnages #disposition_personnages .second_row #personnage_ray,
+#personnages #disposition_personnages .second_row #personnage_debra,
+#personnages #disposition_personnages .second_row #personnage_marie,
+#personnages #disposition_personnages .second_row #personnage_frank,
+#personnages #disposition_personnages .second_row #personnage_robert,
+#personnages #disposition_personnages .second_row #personnage_amy {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -231,39 +260,58 @@ footer .container {
   text-align: center;
   margin: 30px;
 }
-#personnages #disposition_personnages #personnage_ray .photo_personnage,
-#personnages #disposition_personnages #personnage_debra .photo_personnage,
-#personnages #disposition_personnages #personnage_marie .photo_personnage,
-#personnages #disposition_personnages #personnage_frank .photo_personnage,
-#personnages #disposition_personnages #personnage_robert .photo_personnage,
-#personnages #disposition_personnages #personnage_amy .photo_personnage {
+#personnages #disposition_personnages .first_row #personnage_ray .photo_personnage,
+#personnages #disposition_personnages .first_row #personnage_debra .photo_personnage,
+#personnages #disposition_personnages .first_row #personnage_marie .photo_personnage,
+#personnages #disposition_personnages .first_row #personnage_frank .photo_personnage,
+#personnages #disposition_personnages .first_row #personnage_robert .photo_personnage,
+#personnages #disposition_personnages .first_row #personnage_amy .photo_personnage,
+#personnages #disposition_personnages .second_row #personnage_ray .photo_personnage,
+#personnages #disposition_personnages .second_row #personnage_debra .photo_personnage,
+#personnages #disposition_personnages .second_row #personnage_marie .photo_personnage,
+#personnages #disposition_personnages .second_row #personnage_frank .photo_personnage,
+#personnages #disposition_personnages .second_row #personnage_robert .photo_personnage,
+#personnages #disposition_personnages .second_row #personnage_amy .photo_personnage {
   width: 100%;
-  height: 350px;
+  height: 327px;
   object-fit: cover;
 }
-#personnages #disposition_personnages #personnage_ray h4,
-#personnages #disposition_personnages #personnage_debra h4,
-#personnages #disposition_personnages #personnage_marie h4,
-#personnages #disposition_personnages #personnage_frank h4,
-#personnages #disposition_personnages #personnage_robert h4,
-#personnages #disposition_personnages #personnage_amy h4 {
+#personnages #disposition_personnages .first_row #personnage_ray h4,
+#personnages #disposition_personnages .first_row #personnage_debra h4,
+#personnages #disposition_personnages .first_row #personnage_marie h4,
+#personnages #disposition_personnages .first_row #personnage_frank h4,
+#personnages #disposition_personnages .first_row #personnage_robert h4,
+#personnages #disposition_personnages .first_row #personnage_amy h4,
+#personnages #disposition_personnages .second_row #personnage_ray h4,
+#personnages #disposition_personnages .second_row #personnage_debra h4,
+#personnages #disposition_personnages .second_row #personnage_marie h4,
+#personnages #disposition_personnages .second_row #personnage_frank h4,
+#personnages #disposition_personnages .second_row #personnage_robert h4,
+#personnages #disposition_personnages .second_row #personnage_amy h4 {
   color: red;
   font-size: 20px;
   padding-top: 10px;
 }
-#personnages #disposition_personnages #personnage_ray p,
-#personnages #disposition_personnages #personnage_debra p,
-#personnages #disposition_personnages #personnage_marie p,
-#personnages #disposition_personnages #personnage_frank p,
-#personnages #disposition_personnages #personnage_robert p,
-#personnages #disposition_personnages #personnage_amy p {
+#personnages #disposition_personnages .first_row #personnage_ray p,
+#personnages #disposition_personnages .first_row #personnage_debra p,
+#personnages #disposition_personnages .first_row #personnage_marie p,
+#personnages #disposition_personnages .first_row #personnage_frank p,
+#personnages #disposition_personnages .first_row #personnage_robert p,
+#personnages #disposition_personnages .first_row #personnage_amy p,
+#personnages #disposition_personnages .second_row #personnage_ray p,
+#personnages #disposition_personnages .second_row #personnage_debra p,
+#personnages #disposition_personnages .second_row #personnage_marie p,
+#personnages #disposition_personnages .second_row #personnage_frank p,
+#personnages #disposition_personnages .second_row #personnage_robert p,
+#personnages #disposition_personnages .second_row #personnage_amy p {
   color: #000000;
   font-size: 18px;
   padding: 10px 0px;
+  text-align: center;
 }
 
 #acteurs h3 {
-  color: orangered;
+  color: #ec0f0f;
   font-size: 25px;
   margin-top: 30px;
   text-align: center;
@@ -271,31 +319,101 @@ footer .container {
 #acteurs .acteurs {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   margin: 15px;
 }
 #acteurs .acteurs .acteur_ray,
 #acteurs .acteurs .acteur_marie,
-#acteurs .acteurs .acteur_robert {
-  display: flex;
-  flex-direction: row;
-}
-#acteurs .acteurs .acteur_ray .acteur_photo,
-#acteurs .acteurs .acteur_marie .acteur_photo,
-#acteurs .acteurs .acteur_robert .acteur_photo {
-  height: 300px;
-  object-fit: cover;
-}
+#acteurs .acteurs .acteur_robert,
 #acteurs .acteurs .acteur_debra,
 #acteurs .acteurs .acteur_frank,
 #acteurs .acteurs .acteur_amy {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  border: 3px solid black;
+  box-shadow: 3px 8px 5px orange;
+  width: 25%;
+  margin: 10px auto;
+  overflow: hidden;
+  transition: 0.4s ease-in;
 }
-#acteurs .acteurs .acteur_debra .acteur_photo,
-#acteurs .acteurs .acteur_frank .acteur_photo,
-#acteurs .acteurs .acteur_amy .acteur_photo {
+@media (max-width: 767px) {
+  #acteurs .acteurs .acteur_ray,
+#acteurs .acteurs .acteur_marie,
+#acteurs .acteurs .acteur_robert,
+#acteurs .acteurs .acteur_debra,
+#acteurs .acteurs .acteur_frank,
+#acteurs .acteurs .acteur_amy {
+    width: 50%;
+  }
+}
+#acteurs .acteurs .acteur_ray:hover,
+#acteurs .acteurs .acteur_marie:hover,
+#acteurs .acteurs .acteur_robert:hover,
+#acteurs .acteurs .acteur_debra:hover,
+#acteurs .acteurs .acteur_frank:hover,
+#acteurs .acteurs .acteur_amy:hover {
+  width: 40%;
+}
+@media (max-width: 767px) {
+  #acteurs .acteurs .acteur_ray:hover,
+#acteurs .acteurs .acteur_marie:hover,
+#acteurs .acteurs .acteur_robert:hover,
+#acteurs .acteurs .acteur_debra:hover,
+#acteurs .acteurs .acteur_frank:hover,
+#acteurs .acteurs .acteur_amy:hover {
+    width: 80%;
+  }
+}
+#acteurs .acteurs .acteur_ray h4,
+#acteurs .acteurs .acteur_marie h4,
+#acteurs .acteurs .acteur_robert h4,
+#acteurs .acteurs .acteur_debra h4,
+#acteurs .acteurs .acteur_frank h4,
+#acteurs .acteurs .acteur_amy h4 {
+  font-family: DancingScript;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+}
+#acteurs .acteurs .acteur_ray .acteur_portrait,
+#acteurs .acteurs .acteur_marie .acteur_portrait,
+#acteurs .acteurs .acteur_robert .acteur_portrait,
+#acteurs .acteurs .acteur_debra .acteur_portrait,
+#acteurs .acteurs .acteur_frank .acteur_portrait,
+#acteurs .acteurs .acteur_amy .acteur_portrait {
+  display: flex;
+  flex-direction: row;
+}
+#acteurs .acteurs .acteur_ray .acteur_portrait .acteur_photo,
+#acteurs .acteurs .acteur_marie .acteur_portrait .acteur_photo,
+#acteurs .acteurs .acteur_robert .acteur_portrait .acteur_photo,
+#acteurs .acteurs .acteur_debra .acteur_portrait .acteur_photo,
+#acteurs .acteurs .acteur_frank .acteur_portrait .acteur_photo,
+#acteurs .acteurs .acteur_amy .acteur_portrait .acteur_photo {
+  width: 200px;
   height: 300px;
   object-fit: cover;
+  margin: 10px;
+}
+#acteurs .acteurs .acteur_ray .acteur_portrait .acteur_biographie,
+#acteurs .acteurs .acteur_marie .acteur_portrait .acteur_biographie,
+#acteurs .acteurs .acteur_robert .acteur_portrait .acteur_biographie,
+#acteurs .acteurs .acteur_debra .acteur_portrait .acteur_biographie,
+#acteurs .acteurs .acteur_frank .acteur_portrait .acteur_biographie,
+#acteurs .acteurs .acteur_amy .acteur_portrait .acteur_biographie {
+  text-align: justify;
+  height: 300px;
+  overflow: hidden;
+  margin: 15px;
+}
+#acteurs .acteurs .acteur_ray .acteur_position,
+#acteurs .acteurs .acteur_marie .acteur_position,
+#acteurs .acteurs .acteur_robert .acteur_position,
+#acteurs .acteurs .acteur_debra .acteur_position,
+#acteurs .acteurs .acteur_frank .acteur_position,
+#acteurs .acteurs .acteur_amy .acteur_position {
+  flex-direction: row-reverse;
 }
 
 #personnages_secondaires {
@@ -316,8 +434,8 @@ footer .container {
   flex-direction: column;
   justify-content: center;
 }
-#personnages_secondaires #famille_debra h5,
-#personnages_secondaires #famille_amy h5 {
+#personnages_secondaires #famille_debra h4,
+#personnages_secondaires #famille_amy h4 {
   font-family: lobster;
   font-size: 25px;
   text-align: center;
@@ -329,6 +447,14 @@ footer .container {
   flex-direction: row;
   justify-content: center;
   margin: 10px;
+}
+@media (max-width: 767px) {
+  #personnages_secondaires #famille_debra .famille,
+#personnages_secondaires #famille_amy .famille {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 #personnages_secondaires #famille_debra .famille #debra_mere,
 #personnages_secondaires #famille_debra .famille #debra_pere,
@@ -353,32 +479,231 @@ footer .container {
   flex-direction: row;
   justify-content: center;
 }
-#episodes .dvd .saison {
+#episodes .dvd .season {
   box-shadow: 0 4px 8px #c6c6c6;
   width: 10%;
-  height: 150px;
+  margin-bottom: 15px;
 }
-#episodes .dvd .saison a {
+#episodes .dvd .season a {
   text-decoration: none;
 }
-#episodes .dvd .saison h4,
-#episodes .dvd .saison p {
+#episodes .dvd .season h4,
+#episodes .dvd .season p {
   display: none;
 }
-#episodes .dvd .saison .dvd_photo {
+#episodes .dvd .season .dvd_photo {
   width: 100%;
   height: 80%;
   object-fit: cover;
 }
-#episodes .dvd .saison .dvd_photohover h4,
-#episodes .dvd .saison .dvd_photohover p {
+#episodes .dvd .season .dvd_photohover h4,
+#episodes .dvd .season .dvd_photohover p {
   display: content;
 }
 
-.quiz_clicked {
-  background: green;
-  border: 4px solid turquoise;
-  border-radius: 30px;
+#list_episodes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#list_episodes h3 {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px;
+}
+#list_episodes .list_dvd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#list_episodes .list_dvd .section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  #list_episodes .list_dvd .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+#list_episodes .list_dvd .section .list_season {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  height: 450px;
+  margin: 15px;
+}
+#list_episodes .list_dvd .section .list_season h4 {
+  font-size: 30px;
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+#list_episodes .list_dvd .section .list_season .season_photo {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+}
+#list_episodes .list_dvd .section .list_season button {
+  text-align: center;
+}
+
+#quiz, #tests {
+  margin: 20px;
+  margin-top: 40px;
+  font-size: 20px;
+  list-style-type: none;
+}
+#quiz h3, #tests h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#test {
+  width: 50%;
+}
+#test h3 {
+  font-size: 25px;
+  color: #000000;
+  text-align: center;
+}
+#test #btn_color1,
+#test #btn_color2 #btn_color3,
+#test #btn_color4,
+#test #btn_color5,
+#test #btn_color6 {
+  width: 25px;
+  height: 25px;
+}
+#test #btn_color1 {
+  background-color: blue;
+  border: 1px solid black;
+}
+#test #btn_color2 {
+  background-color: red;
+}
+#test #btn_color3 {
+  background-color: green;
+}
+#test #btn_color4 {
+  background-color: yellow;
+}
+#test #btn_color5 {
+  background-color: purple;
+}
+#test #btn_color6 {
+  background-color: black;
+}
+#test #btn_food1,
+#test #btn_food2,
+#test #btn_food3,
+#test #btn_food4,
+#test #btn_food5,
+#test #btn_food6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #btn_animal1,
+#test #btn_animal2,
+#test #btn_animal3,
+#test #btn_animal4,
+#test #btn_animal5,
+#test #btn_animal6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #btn_caractere1,
+#test #btn_caractere2,
+#test #btn_caractere3,
+#test #btn_caractere4,
+#test #btn_caractere5,
+#test #btn_caractere6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #btn_country1,
+#test #btn_country2,
+#test #btn_country3,
+#test #btn_country4,
+#test #btn_country5,
+#test #btn_country6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #btn_activity1,
+#test #btn_activity2,
+#test #btn_activity3,
+#test #btn_activity4,
+#test #btn_activity5,
+#test #btn_activity6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #btn_house1,
+#test #btn_house2,
+#test #btn_house3,
+#test #btn_house4,
+#test #btn_house5,
+#test #btn_house6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #btn_object1,
+#test #btn_object2,
+#test #btn_object3,
+#test #btn_object4,
+#test #btn_object5,
+#test #btn_object6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #big_response {
+  background-color: yellow;
+  border: 3px solid red;
+  box-shadow: 3px 3px 3px orange;
+}
+
+#questions {
+  font-size: 18px;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#questions h3 {
+  font-size: 22px;
+  margin: 30px;
+}
+#questions input {
+  margin: 10px;
+}
+#questions .quiz_click {
+  margin-bottom: 10px;
+}
+#questions .quiz_click h4 {
+  margin-bottom: 10px;
+}
+#questions .quiz_click .response1,
+#questions .quiz_click .response2,
+#questions .quiz_click .response3,
+#questions .quiz_click .response4,
+#questions .quiz_click .response5 {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+#questions .big_response1,
+#questions .big_response2,
+#questions .big_response3,
+#questions .big_response4,
+#questions .big_response5,
+#questions .big_response6,
+#questions .big_response7,
+#questions .big_response8,
+#questions .big_response9,
+#questions .big_response10 {
+  margin: 20px;
 }
 
 #debra_mere,
@@ -607,6 +932,59 @@ footer .container {
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+#debra_mere #presentation_lois .carte_recto h5,
+#debra_mere #presentation_lois .carte_verso h5,
+#debra_mere #presentation_warren .carte_recto h5,
+#debra_mere #presentation_warren .carte_verso h5,
+#debra_mere #presentation_pat .carte_recto h5,
+#debra_mere #presentation_pat .carte_verso h5,
+#debra_mere #presentation_hank .carte_recto h5,
+#debra_mere #presentation_hank .carte_verso h5,
+#debra_mere #presentation_peter .carte_recto h5,
+#debra_mere #presentation_peter .carte_verso h5,
+#debra_pere #presentation_lois .carte_recto h5,
+#debra_pere #presentation_lois .carte_verso h5,
+#debra_pere #presentation_warren .carte_recto h5,
+#debra_pere #presentation_warren .carte_verso h5,
+#debra_pere #presentation_pat .carte_recto h5,
+#debra_pere #presentation_pat .carte_verso h5,
+#debra_pere #presentation_hank .carte_recto h5,
+#debra_pere #presentation_hank .carte_verso h5,
+#debra_pere #presentation_peter .carte_recto h5,
+#debra_pere #presentation_peter .carte_verso h5,
+#amy_mere #presentation_lois .carte_recto h5,
+#amy_mere #presentation_lois .carte_verso h5,
+#amy_mere #presentation_warren .carte_recto h5,
+#amy_mere #presentation_warren .carte_verso h5,
+#amy_mere #presentation_pat .carte_recto h5,
+#amy_mere #presentation_pat .carte_verso h5,
+#amy_mere #presentation_hank .carte_recto h5,
+#amy_mere #presentation_hank .carte_verso h5,
+#amy_mere #presentation_peter .carte_recto h5,
+#amy_mere #presentation_peter .carte_verso h5,
+#amy_pere #presentation_lois .carte_recto h5,
+#amy_pere #presentation_lois .carte_verso h5,
+#amy_pere #presentation_warren .carte_recto h5,
+#amy_pere #presentation_warren .carte_verso h5,
+#amy_pere #presentation_pat .carte_recto h5,
+#amy_pere #presentation_pat .carte_verso h5,
+#amy_pere #presentation_hank .carte_recto h5,
+#amy_pere #presentation_hank .carte_verso h5,
+#amy_pere #presentation_peter .carte_recto h5,
+#amy_pere #presentation_peter .carte_verso h5,
+#amy_frere #presentation_lois .carte_recto h5,
+#amy_frere #presentation_lois .carte_verso h5,
+#amy_frere #presentation_warren .carte_recto h5,
+#amy_frere #presentation_warren .carte_verso h5,
+#amy_frere #presentation_pat .carte_recto h5,
+#amy_frere #presentation_pat .carte_verso h5,
+#amy_frere #presentation_hank .carte_recto h5,
+#amy_frere #presentation_hank .carte_verso h5,
+#amy_frere #presentation_peter .carte_recto h5,
+#amy_frere #presentation_peter .carte_verso h5 {
+  text-align: center;
+  color: black;
+}
 #debra_mere #presentation_lois .carte_recto,
 #debra_mere #presentation_warren .carte_recto,
 #debra_mere #presentation_pat .carte_recto,
@@ -663,23 +1041,6 @@ footer .container {
   background-color: transparent;
   color: #000000;
   transform: rotateY(180deg);
-}
-
-.acteur_portrait {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.acteur_portrait h4 {
-  text-align: center;
-  color: #000000;
-  font-size: 25px;
-  font-family: caveat;
-  margin-bottom: 10px;
-}
-
-p {
-  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */

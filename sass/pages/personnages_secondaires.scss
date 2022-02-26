@@ -13,7 +13,7 @@
     #famille_amy {
         @include flex-center-column;
         
-        h5 {
+        h4 {
             font-family: lobster; 
             font-size: 25px;
             text-align: center;
@@ -23,6 +23,9 @@
         .famille {
             @include flex-center-row;
             margin: 10px;
+            @media (max-width: map-get($breakpoints, mobile)) {
+                @include flex-center-column;
+            }
             
             #debra_mere,
             #debra_pere,

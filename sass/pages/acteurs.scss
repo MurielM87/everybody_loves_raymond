@@ -1,39 +1,68 @@
 #acteurs {
-    h3 {
-        color: orangered;
-        font-size: 25px;
-        margin-top: 30px;
-        text-align: center;
-    }
+  h3 {
+    color: $color1;
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+  }
 
-    .acteurs {
+  .acteurs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 15px;
+
+    .acteur_ray,
+    .acteur_marie,
+    .acteur_robert,
+    .acteur_debra,
+    .acteur_frank,
+    .acteur_amy {
         display: flex;
         flex-direction: column;
-        margin: 15px;
+        border: 3px solid black;
+        box-shadow: 3px 8px 5px orange;
+        width : 25%;
+        margin: 10px auto;
+        overflow: hidden;
+        transition: 0.4s ease-in;
+        @media (max-width: map-get($breakpoints, mobile)) {
+          width: 50%;
+        }
+        &:hover {
+          width: 40%;
+          @media (max-width: map-get($breakpoints, mobile)) {
+            width: 80%;
+          }
+        }
+      h4 {
+        font-family: Dancing + Script;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .acteur_portrait {
+          display: flex;
+          flex-direction: row;
 
-        .acteur_ray, 
-        .acteur_marie, 
-        .acteur_robert {
-            display: flex;
-            flex-direction: row;
-
-           
-            .acteur_photo {
-                height: 300px;
-                object-fit: cover;
-            }
+        .acteur_photo {
+          width: 200px;
+          height: 300px;
+          object-fit: cover;
+          margin: 10px;
         }
 
-        .acteur_debra,
-        .acteur_frank,
-        .acteur_amy {
-            display: flex;
-            flex-direction: row-reverse;
-            
-            .acteur_photo {
-                height: 300px;
-                object-fit: cover;
-            }
+        .acteur_biographie {
+            text-align: justify;
+            height: 300px;
+            overflow: hidden;
+            margin: 15px;
         }
+      }
+
+      .acteur_position {
+          flex-direction: row-reverse;
+      }
     }
+  }
 }

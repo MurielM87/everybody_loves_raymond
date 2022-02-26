@@ -1,5 +1,11 @@
-.quiz_clicked {
-    background: green;
-    border: 4px solid turquoise;
-    border-radius: 30px;
+#quiz, #tests {
+    margin: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    list-style-type: none;
+
+    h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
 }
