@@ -30,7 +30,7 @@
           width: 50%;
         }
         &:hover {
-          width: 40%;
+          width: 50%;
           @media (max-width: map-get($breakpoints, mobile)) {
             width: 80%;
           }
