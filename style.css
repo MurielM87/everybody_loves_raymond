@@ -353,7 +353,7 @@ footer .container div {
 #acteurs .acteurs .acteur_debra:hover,
 #acteurs .acteurs .acteur_frank:hover,
 #acteurs .acteurs .acteur_amy:hover {
-  width: 40%;
+  width: 50%;
 }
 @media (max-width: 767px) {
   #acteurs .acteurs .acteur_ray:hover,
@@ -679,12 +679,19 @@ footer .container div {
 #questions input {
   margin: 10px;
 }
+#questions #quiz_click1,
 #questions .quiz_click {
   margin-bottom: 10px;
 }
+#questions #quiz_click1 h4,
 #questions .quiz_click h4 {
   margin-bottom: 10px;
 }
+#questions #quiz_click1 .response1,
+#questions #quiz_click1 .response2,
+#questions #quiz_click1 .response3,
+#questions #quiz_click1 .response4,
+#questions #quiz_click1 .response5,
 #questions .quiz_click .response1,
 #questions .quiz_click .response2,
 #questions .quiz_click .response3,
