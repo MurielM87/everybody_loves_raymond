@@ -354,6 +354,7 @@ footer .container div {
 #acteurs .acteurs .acteur_frank:hover,
 #acteurs .acteurs .acteur_amy:hover {
   width: 50%;
+  overflow-x: scroll;
 }
 @media (max-width: 767px) {
   #acteurs .acteurs .acteur_ray:hover,

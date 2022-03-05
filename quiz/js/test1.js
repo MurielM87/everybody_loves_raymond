@@ -1,5 +1,40 @@
 alert ('attention, ces résultats ne sont basés sur aucune étude de psychologie !')
 
+//HTML dynamique
+
+const clickEvent = document.createElement("div");
+document.getElementById("test").appendChild(clickEvent);
+clickEvent.setAttribute("class", "click-event");
+
+const title = document.createElement("h4");
+clickEvent.appendChild(title);
+
+const response1 = document.createElement("button");
+clickEvent.appendChild(response1);
+response1.setAttribute("id", "btn_color1");
+response1.textContent("bleu");
+const response2 = document.createElement("button");
+clickEvent.appendChild(response2);
+response2.setAttribute("id", "btn_color2");
+response2.textContent("rouge")
+const response3 = document.createElement("button");
+clickEvent.appendChild(response3);
+response3.setAttribute("id", "btn_color3");
+response3.textContent("vert");
+const response4 = document.createElement("button");
+clickEvent.appendChild(response4);
+response4.setAttribute("id", "btn_color4");
+response4.textContent("jaune");
+const response5 = document.createElement("button");
+clickEvent.appendChild(response5);
+response5.setAttribute("id", "btn_color5");
+response5.textContent("orange");
+const response6 = document.createElement("button");
+clickEvent.appendChild(response6);
+response6.setAttribute("id", "btn_color6");
+response6.textContent("violet");
+
+
 /*SELECTEURS - injecter du style à partir du js
 document.querySelector("h3").style.background = "yellow";
 
