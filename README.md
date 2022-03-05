@@ -1,6 +1,6 @@
 # everybody_loves-raymond
 
-Projet personnel sur la série américaine Tout le monde aime Raymond (Everybody loves Raymond).
+Projet personnel en construction sur la série américaine Tout le monde aime Raymond (Everybody loves Raymond).
 
 utilisation : 
 - HTML
@@ -15,5 +15,5 @@ structure du site :
 - Acteurs
 - Personnages secondaires
 - Episodes
-- Quiz / tests de personnalité
+- Quiz / Portraits chinois
 
