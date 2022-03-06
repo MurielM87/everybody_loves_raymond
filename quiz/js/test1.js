@@ -1,7 +1,5 @@
-alert ('attention, ces résultats ne sont basés sur aucune étude de psychologie !')
 
 //HTML dynamique
-
 const clickEvent = document.createElement("div");
 document.getElementById("test").appendChild(clickEvent);
 clickEvent.setAttribute("class", "click-event");
@@ -9,6 +7,7 @@ clickEvent.setAttribute("class", "click-event");
 const title = document.createElement("h4");
 clickEvent.appendChild(title);
 
+//boutons couleurs
 const response1 = document.createElement("button");
 clickEvent.appendChild(response1);
 response1.setAttribute("id", "btn_color1");
@@ -55,6 +54,8 @@ questionContainer.addEventlistner('click', () => {
     questionContainer.classList.toogle("quiz_clicked");
 });
 
+
+//
 const btn1 = document.querySelector("#btn_1");
 const btn2 = document.getElementById("btn_2");
 const response = document.querySelector('p') ;
