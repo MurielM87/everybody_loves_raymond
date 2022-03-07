@@ -31,7 +31,7 @@
         }
         &:hover {
           width: 50%;
-          overflow-x: scroll;
+          overflow-y: scroll;
           @media (max-width: map-get($breakpoints, mobile)) {
             width: 80%;
           }
