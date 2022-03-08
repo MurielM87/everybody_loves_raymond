@@ -7,31 +7,31 @@ clickEvent.setAttribute("class", "click-event");
 const title = document.createElement("h4");
 clickEvent.appendChild(title);
 
-//boutons couleurs
-const response1 = document.createElement("button");
+//creation HTML boutons couleurs
+let response1 = document.createElement("button");
 clickEvent.appendChild(response1);
 response1.setAttribute("id", "btn_color1");
-response1.textContent("bleu");
-const response2 = document.createElement("button");
+response1.innerText = "bleu";
+let response2 = document.createElement("button");
 clickEvent.appendChild(response2);
 response2.setAttribute("id", "btn_color2");
-response2.textContent("rouge")
-const response3 = document.createElement("button");
+response2.innerText = "rouge";
+let response3 = document.createElement("button");
 clickEvent.appendChild(response3);
 response3.setAttribute("id", "btn_color3");
-response3.textContent("vert");
-const response4 = document.createElement("button");
+response3.innerText = "vert";
+let response4 = document.createElement("button");
 clickEvent.appendChild(response4);
 response4.setAttribute("id", "btn_color4");
-response4.textContent("jaune");
-const response5 = document.createElement("button");
+response4.innerText = "jaune";
+let response5 = document.createElement("button");
 clickEvent.appendChild(response5);
 response5.setAttribute("id", "btn_color5");
-response5.textContent("orange");
-const response6 = document.createElement("button");
+response5.innerText = "orange";
+let response6 = document.createElement("button");
 clickEvent.appendChild(response6);
 response6.setAttribute("id", "btn_color6");
-response6.textContent("violet");
+response6.innerText = "violet";
 
 
 /*SELECTEURS - injecter du style à partir du js
