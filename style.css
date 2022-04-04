@@ -724,11 +724,13 @@ footer .container div {
 #amy_mere,
 #amy_pere,
 #amy_frere {
+  position: relative;
   background-color: transparent;
   width: 300px;
   height: 400px;
   border: 1px solid #ec8c0f;
   perspective: 1000px;
+  perspective-origin: top;
 }
 #debra_mere #presentation_lois,
 #debra_mere #presentation_warren,
