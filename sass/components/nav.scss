@@ -1,0 +1,18 @@
+nav {
+    display : flex ; 
+    flex-direction : row ; 
+    justify-content : space-around ; 
+    
+    .menu {
+    font-size : 20px ; 
+    color : red ;
+    display : flex ; 
+    flex-direction : row ; 
+    justify-content : space-around ; 
+    list-style-type : none ;
+  }
+}
+
+li {
+  margin: 15px;
+}

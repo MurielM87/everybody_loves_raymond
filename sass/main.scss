@@ -1,24 +1,29 @@
-@import "./utils/responsive.scss";
-@import "./utils/variable.scss";
-@import "./utils/mixins.scss";
+@import "utils/responsive.scss";
+@import "utils/mixins.scss";
+@import "utils/variable.scss";
 
-@import "./base/body.scss";
-@import "./base/font-family.scss";
-@import "./base/normalize.scss";
+@import "base/normalize.scss";
+@import "base/body.scss";
+@import "base/font-family.scss";
+@import "base/normes.scss";
 
-@import "./layout/header.scss";
-@import "./layout/footer.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
 
-@import "./pages/photos_debut.scss";
-@import "./pages/histoire.scss";
-@import "./pages/personnages.scss";
-@import "./pages/acteurs.scss";
-@import "./pages/personnages_secondaires.scss";
-@import "./pages/episodes.scss";
-@import "./pages/list_episodes.scss";
-@import "./pages/quiz.scss";
+@import "components/btn_top.scss";
+@import "components/nav.scss";
 
-@import "./components/test1.scss";
-@import "./components/quiz1.scss";
+@import "pages/acteurs.scss";
+@import "pages/episodes.scss";
+@import "pages/histoire.scss";
+@import "pages/list_episodes.scss";
+@import "pages/personnages.scss";
+@import "pages/personnages_secondaires.scss";
+@import "pages/photos_debut.scss";
+@import "pages/photos_presentation.scss";
+@import "pages/quiz.scss";
 
-@import "./themes/cartes_personnages_secondaires.scss";
+@import "themes/cartes_personnages_secondaires.scss";
+
+@import "composants/quiz1.scss";
+@import "composants/test1.scss";

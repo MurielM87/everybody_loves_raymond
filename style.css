@@ -1,3 +1,4 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
@@ -18,7 +19,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Love+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap");
-@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 * {
   margin: 0;
   padding: 0;
@@ -44,12 +44,24 @@ body {
   }
 }
 
+.container {
+  width: 1394px;
+  margin: auto;
+}
+
+body {
+  font-family: "Raleway", "sans-serif";
+  color: #000000;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+}
+
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(red, orange, yellow);
 }
 header h1 {
   color: #000000;
@@ -66,9 +78,8 @@ header h2 {
   text-align: center;
 }
 header #photo_groupe {
-  width: 45%;
-  height: 550px;
   margin: 15px 0px;
+  object-fit: contain;
 }
 header nav {
   width: 90%;
@@ -115,82 +126,177 @@ footer .container div {
   margin-top: 10px;
 }
 
-#photos {
+#myBtn {
+  width: 4%;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(246, 34, 6);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
-@media (max-width: 767px) {
-  #photos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+nav .menu {
+  font-size: 20px;
+  color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
 }
-#photos #photo_ray,
-#photos #photo_debra,
-#photos #photo_marie,
-#photos #photo_frank,
-#photos #photo_robert,
-#photos #photo_amy {
+
+li {
+  margin: 15px;
+}
+
+#acteurs h3 {
+  color: #ec0f0f;
+  font-size: 25px;
+  margin-top: 30px;
+  text-align: center;
+}
+#acteurs .acteurs {
   display: flex;
   flex-direction: column;
-  width: 10%;
-  height: 260px;
-  border: solid 3px #ec8c0f;
-  align-items: center;
+  justify-content: flex-start;
+  margin: 15px;
 }
-#photos #photo_ray .ray,
-#photos #photo_ray .debra,
-#photos #photo_ray .marie,
-#photos #photo_ray .frank,
-#photos #photo_ray .robert,
-#photos #photo_ray .amy,
-#photos #photo_debra .ray,
-#photos #photo_debra .debra,
-#photos #photo_debra .marie,
-#photos #photo_debra .frank,
-#photos #photo_debra .robert,
-#photos #photo_debra .amy,
-#photos #photo_marie .ray,
-#photos #photo_marie .debra,
-#photos #photo_marie .marie,
-#photos #photo_marie .frank,
-#photos #photo_marie .robert,
-#photos #photo_marie .amy,
-#photos #photo_frank .ray,
-#photos #photo_frank .debra,
-#photos #photo_frank .marie,
-#photos #photo_frank .frank,
-#photos #photo_frank .robert,
-#photos #photo_frank .amy,
-#photos #photo_robert .ray,
-#photos #photo_robert .debra,
-#photos #photo_robert .marie,
-#photos #photo_robert .frank,
-#photos #photo_robert .robert,
-#photos #photo_robert .amy,
-#photos #photo_amy .ray,
-#photos #photo_amy .debra,
-#photos #photo_amy .marie,
-#photos #photo_amy .frank,
-#photos #photo_amy .robert,
-#photos #photo_amy .amy {
+#acteurs .acteurs .acteur_ray,
+#acteurs .acteurs .acteur_marie,
+#acteurs .acteurs .acteur_robert,
+#acteurs .acteurs .acteur_debra,
+#acteurs .acteurs .acteur_frank,
+#acteurs .acteurs .acteur_amy {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  box-shadow: 3px 8px 5px orange;
+  width: 25%;
+  margin: 10px auto;
+  overflow: hidden;
+  transition: 0.4s ease-in;
+}
+@media (max-width: 767px) {
+  #acteurs .acteurs .acteur_ray,
+  #acteurs .acteurs .acteur_marie,
+  #acteurs .acteurs .acteur_robert,
+  #acteurs .acteurs .acteur_debra,
+  #acteurs .acteurs .acteur_frank,
+  #acteurs .acteurs .acteur_amy {
+    width: 50%;
+  }
+}
+#acteurs .acteurs .acteur_ray:hover,
+#acteurs .acteurs .acteur_marie:hover,
+#acteurs .acteurs .acteur_robert:hover,
+#acteurs .acteurs .acteur_debra:hover,
+#acteurs .acteurs .acteur_frank:hover,
+#acteurs .acteurs .acteur_amy:hover {
+  width: 50%;
+  overflow-y: scroll;
+}
+@media (max-width: 767px) {
+  #acteurs .acteurs .acteur_ray:hover,
+  #acteurs .acteurs .acteur_marie:hover,
+  #acteurs .acteurs .acteur_robert:hover,
+  #acteurs .acteurs .acteur_debra:hover,
+  #acteurs .acteurs .acteur_frank:hover,
+  #acteurs .acteurs .acteur_amy:hover {
+    width: 80%;
+  }
+}
+#acteurs .acteurs .acteur_ray h4,
+#acteurs .acteurs .acteur_marie h4,
+#acteurs .acteurs .acteur_robert h4,
+#acteurs .acteurs .acteur_debra h4,
+#acteurs .acteurs .acteur_frank h4,
+#acteurs .acteurs .acteur_amy h4 {
+  font-family: DancingScript;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+}
+#acteurs .acteurs .acteur_ray .acteur_portrait,
+#acteurs .acteurs .acteur_marie .acteur_portrait,
+#acteurs .acteurs .acteur_robert .acteur_portrait,
+#acteurs .acteurs .acteur_debra .acteur_portrait,
+#acteurs .acteurs .acteur_frank .acteur_portrait,
+#acteurs .acteurs .acteur_amy .acteur_portrait {
+  display: flex;
+  flex-direction: row;
+}
+#acteurs .acteurs .acteur_ray .acteur_portrait .acteur_photo,
+#acteurs .acteurs .acteur_marie .acteur_portrait .acteur_photo,
+#acteurs .acteurs .acteur_robert .acteur_portrait .acteur_photo,
+#acteurs .acteurs .acteur_debra .acteur_portrait .acteur_photo,
+#acteurs .acteurs .acteur_frank .acteur_portrait .acteur_photo,
+#acteurs .acteurs .acteur_amy .acteur_portrait .acteur_photo {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin: 10px;
+}
+#acteurs .acteurs .acteur_ray .acteur_portrait .acteur_biographie,
+#acteurs .acteurs .acteur_marie .acteur_portrait .acteur_biographie,
+#acteurs .acteurs .acteur_robert .acteur_portrait .acteur_biographie,
+#acteurs .acteurs .acteur_debra .acteur_portrait .acteur_biographie,
+#acteurs .acteurs .acteur_frank .acteur_portrait .acteur_biographie,
+#acteurs .acteurs .acteur_amy .acteur_portrait .acteur_biographie {
+  text-align: justify;
+  height: 300px;
+  overflow: hidden;
+  margin: 15px;
+}
+#acteurs .acteurs .acteur_ray .acteur_position,
+#acteurs .acteurs .acteur_marie .acteur_position,
+#acteurs .acteurs .acteur_robert .acteur_position,
+#acteurs .acteurs .acteur_debra .acteur_position,
+#acteurs .acteurs .acteur_frank .acteur_position,
+#acteurs .acteurs .acteur_amy .acteur_position {
+  flex-direction: row-reverse;
+}
+
+#episodes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#episodes .dvd {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#episodes .dvd .season {
+  width: 10%;
+  margin-bottom: 15px;
+}
+#episodes .dvd .season a {
+  text-decoration: none;
+}
+#episodes .dvd .season h4,
+#episodes .dvd .season p {
+  display: none;
+}
+#episodes .dvd .season .dvd_photo {
   width: 100%;
-  height: 240px;
+  height: 80%;
   object-fit: cover;
 }
-#photos #photo_ray .nom,
-#photos #photo_debra .nom,
-#photos #photo_marie .nom,
-#photos #photo_frank .nom,
-#photos #photo_robert .nom,
-#photos #photo_amy .nom {
-  margin-top: 10px;
-  font-family: Redressed;
-  font-size: 25px;
+#episodes .dvd .season .dvd_photo:hover h4,
+#episodes .dvd .season .dvd_photo:hover p {
+  display: content;
 }
 
 #histoire {
@@ -206,6 +312,56 @@ footer .container div {
   margin: 40px;
   text-align: justify;
   font-size: 18px;
+}
+
+#list_episodes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#list_episodes h3 {
+  font-size: 25px;
+  text-align: center;
+  margin: 20px;
+}
+#list_episodes .list_dvd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#list_episodes .list_dvd .section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  #list_episodes .list_dvd .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+#list_episodes .list_dvd .section .list_season {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  height: 450px;
+  margin: 15px;
+}
+#list_episodes .list_dvd .section .list_season h4 {
+  font-size: 30px;
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+#list_episodes .list_dvd .section .list_season .season_photo {
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+}
+#list_episodes .list_dvd .section .list_season button {
+  text-align: center;
 }
 
 #personnages {
@@ -310,113 +466,6 @@ footer .container div {
   text-align: center;
 }
 
-#acteurs h3 {
-  color: #ec0f0f;
-  font-size: 25px;
-  margin-top: 30px;
-  text-align: center;
-}
-#acteurs .acteurs {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 15px;
-}
-#acteurs .acteurs .acteur_ray,
-#acteurs .acteurs .acteur_marie,
-#acteurs .acteurs .acteur_robert,
-#acteurs .acteurs .acteur_debra,
-#acteurs .acteurs .acteur_frank,
-#acteurs .acteurs .acteur_amy {
-  display: flex;
-  flex-direction: column;
-  border: 3px solid black;
-  box-shadow: 3px 8px 5px orange;
-  width: 25%;
-  margin: 10px auto;
-  overflow: hidden;
-  transition: 0.4s ease-in;
-}
-@media (max-width: 767px) {
-  #acteurs .acteurs .acteur_ray,
-#acteurs .acteurs .acteur_marie,
-#acteurs .acteurs .acteur_robert,
-#acteurs .acteurs .acteur_debra,
-#acteurs .acteurs .acteur_frank,
-#acteurs .acteurs .acteur_amy {
-    width: 50%;
-  }
-}
-#acteurs .acteurs .acteur_ray:hover,
-#acteurs .acteurs .acteur_marie:hover,
-#acteurs .acteurs .acteur_robert:hover,
-#acteurs .acteurs .acteur_debra:hover,
-#acteurs .acteurs .acteur_frank:hover,
-#acteurs .acteurs .acteur_amy:hover {
-  width: 50%;
-  overflow-y: scroll;
-}
-@media (max-width: 767px) {
-  #acteurs .acteurs .acteur_ray:hover,
-#acteurs .acteurs .acteur_marie:hover,
-#acteurs .acteurs .acteur_robert:hover,
-#acteurs .acteurs .acteur_debra:hover,
-#acteurs .acteurs .acteur_frank:hover,
-#acteurs .acteurs .acteur_amy:hover {
-    width: 80%;
-  }
-}
-#acteurs .acteurs .acteur_ray h4,
-#acteurs .acteurs .acteur_marie h4,
-#acteurs .acteurs .acteur_robert h4,
-#acteurs .acteurs .acteur_debra h4,
-#acteurs .acteurs .acteur_frank h4,
-#acteurs .acteurs .acteur_amy h4 {
-  font-family: DancingScript;
-  font-size: 25px;
-  text-align: center;
-  margin-top: 10px;
-}
-#acteurs .acteurs .acteur_ray .acteur_portrait,
-#acteurs .acteurs .acteur_marie .acteur_portrait,
-#acteurs .acteurs .acteur_robert .acteur_portrait,
-#acteurs .acteurs .acteur_debra .acteur_portrait,
-#acteurs .acteurs .acteur_frank .acteur_portrait,
-#acteurs .acteurs .acteur_amy .acteur_portrait {
-  display: flex;
-  flex-direction: row;
-}
-#acteurs .acteurs .acteur_ray .acteur_portrait .acteur_photo,
-#acteurs .acteurs .acteur_marie .acteur_portrait .acteur_photo,
-#acteurs .acteurs .acteur_robert .acteur_portrait .acteur_photo,
-#acteurs .acteurs .acteur_debra .acteur_portrait .acteur_photo,
-#acteurs .acteurs .acteur_frank .acteur_portrait .acteur_photo,
-#acteurs .acteurs .acteur_amy .acteur_portrait .acteur_photo {
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-  margin: 10px;
-}
-#acteurs .acteurs .acteur_ray .acteur_portrait .acteur_biographie,
-#acteurs .acteurs .acteur_marie .acteur_portrait .acteur_biographie,
-#acteurs .acteurs .acteur_robert .acteur_portrait .acteur_biographie,
-#acteurs .acteurs .acteur_debra .acteur_portrait .acteur_biographie,
-#acteurs .acteurs .acteur_frank .acteur_portrait .acteur_biographie,
-#acteurs .acteurs .acteur_amy .acteur_portrait .acteur_biographie {
-  text-align: justify;
-  height: 300px;
-  overflow: hidden;
-  margin: 15px;
-}
-#acteurs .acteurs .acteur_ray .acteur_position,
-#acteurs .acteurs .acteur_marie .acteur_position,
-#acteurs .acteurs .acteur_robert .acteur_position,
-#acteurs .acteurs .acteur_debra .acteur_position,
-#acteurs .acteurs .acteur_frank .acteur_position,
-#acteurs .acteurs .acteur_amy .acteur_position {
-  flex-direction: row-reverse;
-}
-
 #personnages_secondaires {
   display: flex;
   flex-direction: column;
@@ -451,7 +500,7 @@ footer .container div {
 }
 @media (max-width: 767px) {
   #personnages_secondaires #famille_debra .famille,
-#personnages_secondaires #famille_amy .famille {
+  #personnages_secondaires #famille_amy .famille {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -470,86 +519,106 @@ footer .container div {
   margin: 5px;
 }
 
-#episodes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#episodes .dvd {
+#photos {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-#episodes .dvd .season {
-  box-shadow: 0 4px 8px #c6c6c6;
-  width: 10%;
-  margin-bottom: 15px;
-}
-#episodes .dvd .season a {
-  text-decoration: none;
-}
-#episodes .dvd .season h4,
-#episodes .dvd .season p {
-  display: none;
-}
-#episodes .dvd .season .dvd_photo {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-}
-#episodes .dvd .season .dvd_photohover h4,
-#episodes .dvd .season .dvd_photohover p {
-  display: content;
-}
-
-#list_episodes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#list_episodes h3 {
-  font-size: 25px;
-  text-align: center;
-  margin: 20px;
-}
-#list_episodes .list_dvd {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#list_episodes .list_dvd .section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 @media (max-width: 767px) {
-  #list_episodes .list_dvd .section {
+  #photos {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
-#list_episodes .list_dvd .section .list_season {
+#photos #photo_ray,
+#photos #photo_debra,
+#photos #photo_marie,
+#photos #photo_frank,
+#photos #photo_robert,
+#photos #photo_amy {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 25%;
-  height: 450px;
-  margin: 15px;
+  width: 10%;
+  height: 260px;
+  border: solid 3px #ec8c0f;
+  align-items: center;
 }
-#list_episodes .list_dvd .section .list_season h4 {
-  font-size: 30px;
-  color: red;
-  text-align: center;
-  margin-bottom: 15px;
-}
-#list_episodes .list_dvd .section .list_season .season_photo {
+#photos #photo_ray .ray,
+#photos #photo_ray .debra,
+#photos #photo_ray .marie,
+#photos #photo_ray .frank,
+#photos #photo_ray .robert,
+#photos #photo_ray .amy,
+#photos #photo_debra .ray,
+#photos #photo_debra .debra,
+#photos #photo_debra .marie,
+#photos #photo_debra .frank,
+#photos #photo_debra .robert,
+#photos #photo_debra .amy,
+#photos #photo_marie .ray,
+#photos #photo_marie .debra,
+#photos #photo_marie .marie,
+#photos #photo_marie .frank,
+#photos #photo_marie .robert,
+#photos #photo_marie .amy,
+#photos #photo_frank .ray,
+#photos #photo_frank .debra,
+#photos #photo_frank .marie,
+#photos #photo_frank .frank,
+#photos #photo_frank .robert,
+#photos #photo_frank .amy,
+#photos #photo_robert .ray,
+#photos #photo_robert .debra,
+#photos #photo_robert .marie,
+#photos #photo_robert .frank,
+#photos #photo_robert .robert,
+#photos #photo_robert .amy,
+#photos #photo_amy .ray,
+#photos #photo_amy .debra,
+#photos #photo_amy .marie,
+#photos #photo_amy .frank,
+#photos #photo_amy .robert,
+#photos #photo_amy .amy {
   width: 100%;
-  height: 410px;
+  height: 240px;
   object-fit: cover;
 }
-#list_episodes .list_dvd .section .list_season button {
-  text-align: center;
+#photos #photo_ray .nom,
+#photos #photo_debra .nom,
+#photos #photo_marie .nom,
+#photos #photo_frank .nom,
+#photos #photo_robert .nom,
+#photos #photo_amy .nom {
+  margin-top: 10px;
+  font-family: Redressed;
+  font-size: 25px;
+}
+
+#photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+#photos .photo_ray, #photos .photo_debra, #photos .photo_marie, #photos .photo_frank, #photos .photo_robert, #photos .photo_amy {
+  object-fit: cover;
+  width: 8%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border: groove 13px gold;
+}
+#photos .photo_ray .ray, #photos .photo_ray .debra, #photos .photo_ray .marie, #photos .photo_ray .frank, #photos .photo_ray .robert, #photos .photo_ray .amy, #photos .photo_debra .ray, #photos .photo_debra .debra, #photos .photo_debra .marie, #photos .photo_debra .frank, #photos .photo_debra .robert, #photos .photo_debra .amy, #photos .photo_marie .ray, #photos .photo_marie .debra, #photos .photo_marie .marie, #photos .photo_marie .frank, #photos .photo_marie .robert, #photos .photo_marie .amy, #photos .photo_frank .ray, #photos .photo_frank .debra, #photos .photo_frank .marie, #photos .photo_frank .frank, #photos .photo_frank .robert, #photos .photo_frank .amy, #photos .photo_robert .ray, #photos .photo_robert .debra, #photos .photo_robert .marie, #photos .photo_robert .frank, #photos .photo_robert .robert, #photos .photo_robert .amy, #photos .photo_amy .ray, #photos .photo_amy .debra, #photos .photo_amy .marie, #photos .photo_amy .frank, #photos .photo_amy .robert, #photos .photo_amy .amy {
+  width: 97%;
+  height: 150px;
+  position: center;
 }
 
 #quiz, #tests {
@@ -561,162 +630,6 @@ footer .container div {
 #quiz h3, #tests h3 {
   font-size: 22px;
   margin-bottom: 10px;
-}
-
-#test {
-  width: 50%;
-}
-#test h3 {
-  font-size: 25px;
-  color: #000000;
-  text-align: center;
-}
-#test #btn_color1,
-#test #btn_color2 #btn_color3,
-#test #btn_color4,
-#test #btn_color5,
-#test #btn_color6 {
-  width: 25px;
-  height: 25px;
-}
-#test #btn_color1 {
-  background-color: blue;
-  border: 1px solid black;
-}
-#test #btn_color2 {
-  background-color: red;
-}
-#test #btn_color3 {
-  background-color: green;
-}
-#test #btn_color4 {
-  background-color: yellow;
-}
-#test #btn_color5 {
-  background-color: purple;
-}
-#test #btn_color6 {
-  background-color: black;
-}
-#test #btn_food1,
-#test #btn_food2,
-#test #btn_food3,
-#test #btn_food4,
-#test #btn_food5,
-#test #btn_food6 {
-  display: flex;
-  flex-direction: row;
-}
-#test #btn_animal1,
-#test #btn_animal2,
-#test #btn_animal3,
-#test #btn_animal4,
-#test #btn_animal5,
-#test #btn_animal6 {
-  display: flex;
-  flex-direction: row;
-}
-#test #btn_caractere1,
-#test #btn_caractere2,
-#test #btn_caractere3,
-#test #btn_caractere4,
-#test #btn_caractere5,
-#test #btn_caractere6 {
-  display: flex;
-  flex-direction: row;
-}
-#test #btn_country1,
-#test #btn_country2,
-#test #btn_country3,
-#test #btn_country4,
-#test #btn_country5,
-#test #btn_country6 {
-  display: flex;
-  flex-direction: row;
-}
-#test #btn_activity1,
-#test #btn_activity2,
-#test #btn_activity3,
-#test #btn_activity4,
-#test #btn_activity5,
-#test #btn_activity6 {
-  display: flex;
-  flex-direction: row;
-}
-#test #btn_house1,
-#test #btn_house2,
-#test #btn_house3,
-#test #btn_house4,
-#test #btn_house5,
-#test #btn_house6 {
-  display: flex;
-  flex-direction: row;
-}
-#test #btn_object1,
-#test #btn_object2,
-#test #btn_object3,
-#test #btn_object4,
-#test #btn_object5,
-#test #btn_object6 {
-  display: flex;
-  flex-direction: row;
-}
-#test #big_response {
-  background-color: yellow;
-  border: 3px solid red;
-  box-shadow: 3px 3px 3px orange;
-}
-#test .image_test {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-}
-
-#questions {
-  font-size: 18px;
-  margin-left: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#questions h3 {
-  font-size: 22px;
-  margin: 30px;
-}
-#questions input {
-  margin: 10px;
-}
-#questions #quiz_click1,
-#questions .quiz_click {
-  margin-bottom: 10px;
-}
-#questions #quiz_click1 h4,
-#questions .quiz_click h4 {
-  margin-bottom: 10px;
-}
-#questions #quiz_click1 .response1,
-#questions #quiz_click1 .response2,
-#questions #quiz_click1 .response3,
-#questions #quiz_click1 .response4,
-#questions #quiz_click1 .response5,
-#questions .quiz_click .response1,
-#questions .quiz_click .response2,
-#questions .quiz_click .response3,
-#questions .quiz_click .response4,
-#questions .quiz_click .response5 {
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-#questions .big_response1,
-#questions .big_response2,
-#questions .big_response3,
-#questions .big_response4,
-#questions .big_response5,
-#questions .big_response6,
-#questions .big_response7,
-#questions .big_response8,
-#questions .big_response9,
-#questions .big_response10 {
-  margin: 20px;
 }
 
 #debra_mere,
@@ -1056,6 +969,162 @@ footer .container div {
   background-color: transparent;
   color: #000000;
   transform: rotateY(180deg);
+}
+
+#questions {
+  font-size: 18px;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#questions h3 {
+  font-size: 22px;
+  margin: 30px;
+}
+#questions input {
+  margin: 10px;
+}
+#questions #quiz_click1,
+#questions .quiz_click {
+  margin-bottom: 10px;
+}
+#questions #quiz_click1 h4,
+#questions .quiz_click h4 {
+  margin-bottom: 10px;
+}
+#questions #quiz_click1 .response1,
+#questions #quiz_click1 .response2,
+#questions #quiz_click1 .response3,
+#questions #quiz_click1 .response4,
+#questions #quiz_click1 .response5,
+#questions .quiz_click .response1,
+#questions .quiz_click .response2,
+#questions .quiz_click .response3,
+#questions .quiz_click .response4,
+#questions .quiz_click .response5 {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+#questions .big_response1,
+#questions .big_response2,
+#questions .big_response3,
+#questions .big_response4,
+#questions .big_response5,
+#questions .big_response6,
+#questions .big_response7,
+#questions .big_response8,
+#questions .big_response9,
+#questions .big_response10 {
+  margin: 20px;
+}
+
+#test {
+  width: 50%;
+}
+#test h3 {
+  font-size: 25px;
+  color: #000000;
+  text-align: center;
+}
+#test #btn_color1,
+#test #btn_color2 #btn_color3,
+#test #btn_color4,
+#test #btn_color5,
+#test #btn_color6 {
+  width: 25px;
+  height: 25px;
+}
+#test #btn_color1 {
+  background-color: blue;
+  border: 1px solid black;
+}
+#test #btn_color2 {
+  background-color: red;
+}
+#test #btn_color3 {
+  background-color: green;
+}
+#test #btn_color4 {
+  background-color: yellow;
+}
+#test #btn_color5 {
+  background-color: purple;
+}
+#test #btn_color6 {
+  background-color: black;
+}
+#test #btn_food1,
+#test #btn_food2,
+#test #btn_food3,
+#test #btn_food4,
+#test #btn_food5,
+#test #btn_food6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #btn_animal1,
+#test #btn_animal2,
+#test #btn_animal3,
+#test #btn_animal4,
+#test #btn_animal5,
+#test #btn_animal6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #btn_caractere1,
+#test #btn_caractere2,
+#test #btn_caractere3,
+#test #btn_caractere4,
+#test #btn_caractere5,
+#test #btn_caractere6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #btn_country1,
+#test #btn_country2,
+#test #btn_country3,
+#test #btn_country4,
+#test #btn_country5,
+#test #btn_country6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #btn_activity1,
+#test #btn_activity2,
+#test #btn_activity3,
+#test #btn_activity4,
+#test #btn_activity5,
+#test #btn_activity6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #btn_house1,
+#test #btn_house2,
+#test #btn_house3,
+#test #btn_house4,
+#test #btn_house5,
+#test #btn_house6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #btn_object1,
+#test #btn_object2,
+#test #btn_object3,
+#test #btn_object4,
+#test #btn_object5,
+#test #btn_object6 {
+  display: flex;
+  flex-direction: row;
+}
+#test #big_response {
+  background-color: yellow;
+  border: 3px solid red;
+  box-shadow: 3px 3px 3px orange;
+}
+#test .image_test {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

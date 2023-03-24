@@ -7,32 +7,33 @@ clickEvent.setAttribute("class", "click-event");
 const title = document.createElement("h4");
 clickEvent.appendChild(title);
 
-//creation HTML boutons couleurs
-let response1 = document.createElement("button");
-clickEvent.appendChild(response1);
-response1.setAttribute("id", "btn_color1");
-response1.innerText = "bleu";
-let response2 = document.createElement("button");
-clickEvent.appendChild(response2);
-response2.setAttribute("id", "btn_color2");
-response2.innerText = "rouge";
-let response3 = document.createElement("button");
-clickEvent.appendChild(response3);
-response3.setAttribute("id", "btn_color3");
-response3.innerText = "vert";
-let response4 = document.createElement("button");
-clickEvent.appendChild(response4);
-response4.setAttribute("id", "btn_color4");
-response4.innerText = "jaune";
-let response5 = document.createElement("button");
-clickEvent.appendChild(response5);
-response5.setAttribute("id", "btn_color5");
-response5.innerText = "orange";
-let response6 = document.createElement("button");
-clickEvent.appendChild(response6);
-response6.setAttribute("id", "btn_color6");
-response6.innerText = "violet";
+//creation HTML question 1 - boutons couleurs
+let ques1res1 = document.createElement("button");
+clickEvent.appendChild(ques1res1);
+ques1res1.setAttribute("id", "btn_color1");
+ques1res1.innerText = "bleu";
+let ques1res2 = document.createElement("button");
+clickEvent.appendChild(ques1res2);
+ques1res2.setAttribute("id", "btn_color2");
+ques1res2.innerText = "rouge";
+let ques1res3 = document.createElement("button");
+clickEvent.appendChild(ques1res3);
+ques1res3.setAttribute("id", "btn_color3");
+ques1res3.innerText = "vert";
+let ques1res4 = document.createElement("button");
+clickEvent.appendChild(ques1res4);
+ques1res4.setAttribute("id", "btn_color4");
+ques1res4.innerText = "jaune";
+let ques1res5 = document.createElement("button");
+clickEvent.appendChild(rques1res5);
+ques1res5.setAttribute("id", "btn_color5");
+ques1res5.innerText = "orange";
+let ques1res6 = document.createElement("button");
+clickEvent.appendChild(ques1res6);
+ques1res6.setAttribute("id", "btn_color6");
+ques1res6.innerText = "violet";
 
+//creations balises question 2 
 
 /*SELECTEURS - injecter du style à partir du js
 document.querySelector("h3").style.background = "yellow";

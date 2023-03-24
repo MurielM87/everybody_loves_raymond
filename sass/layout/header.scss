@@ -1,7 +1,6 @@
 header {
   @include flex-center-column;
   align-items: center;
-  background: linear-gradient(red, orange, yellow);
   h1 {
     color: #000000;
     font-family: sacramento, Arial, Helvetica, sans-serif;
@@ -19,9 +18,8 @@ header {
   }
 
   #photo_groupe {
-    width: 45%;
-    height: 550px;
     margin: 15px 0px;
+    object-fit: contain;
   }
 
   nav {

@@ -5,7 +5,6 @@
         @include flex-center-row;
 
         .season {
-            box-shadow: 0 4px 8px #c6c6c6;
             width: 10%;
             margin-bottom: 15px;
 
@@ -23,7 +22,7 @@
                 height: 80%;
                 object-fit: cover;
 
-                &hover {
+                &:hover {
                     h4,
                     p {
                         display: content;
