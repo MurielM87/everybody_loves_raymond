@@ -1,7 +1,6 @@
 #photos {
     @include flex-space-around-row;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 10px 20px 40px 20px;
     @media (max-width: map-get($breakpoints, mobile)) {
         @include flex-center-column;
     }
@@ -14,10 +13,13 @@
     #photo_amy {
         display: flex;
         flex-direction: column;
-        width: 10%;
-        height: 260px;        
-        border: solid 3px $color2;
+        width: 20%;
+        height: 260px;  
         align-items: center;
+
+        @media (max-width: map-get($breakpoints, mobile)) {
+            width: 100%;
+        }
         .ray,
         .debra,
         .marie,
@@ -29,10 +31,28 @@
             object-fit: cover;
         }
 
+        .ray,
+        .marie,
+        .robert {
+            transform: rotate(20deg);      
+            border: groove 13px $color3;
+        }
+        .debra,
+        .frank,
+        .amy {
+            transform: rotate(-20deg);      
+            border: groove 13px $color3;
+        }
+
         .nom {
-            margin-top: 10px;
+            margin-top: 20px;
+            margin-right: 20px;
             font-family: Redressed;
             font-size: 25px;
+
+            @media (max-width: map-get($breakpoints, mobile)) {
+                display: none;
+            }
         }
     }
 }

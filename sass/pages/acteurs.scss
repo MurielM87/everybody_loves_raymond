@@ -18,24 +18,24 @@
     .acteur_debra,
     .acteur_frank,
     .acteur_amy {
-        display: flex;
-        flex-direction: column;
-        border: 3px solid black;
-        box-shadow: 3px 8px 5px orange;
-        width : 25%;
-        margin: 10px auto;
-        overflow: hidden;
-        transition: 0.4s ease-in;
+      display: flex;
+      flex-direction: column;
+      border: 3px solid black;
+      box-shadow: 3px 8px 5px orange;
+      width: 25%;
+      margin: 10px auto;
+      overflow: hidden;
+      transition: 0.4s ease-in;
+      @media (max-width: map-get($breakpoints, mobile)) {
+        width: 50%;
+      }
+      &:hover {
+        width: 50%;
+        overflow-y: scroll;
         @media (max-width: map-get($breakpoints, mobile)) {
-          width: 50%;
+          width: 100%;
         }
-        &:hover {
-          width: 50%;
-          overflow-y: scroll;
-          @media (max-width: map-get($breakpoints, mobile)) {
-            width: 80%;
-          }
-        }
+      }
       h4 {
         font-family: Dancing + Script;
         font-size: 25px;
@@ -43,26 +43,39 @@
         margin-top: 10px;
       }
       .acteur_portrait {
-          display: flex;
-          flex-direction: row;
+        display: flex;
+        flex-direction: row;
 
         .acteur_photo {
           width: 200px;
           height: 300px;
           object-fit: cover;
           margin: 10px;
+
+          @media (max-width: map-get($breakpoints, mobile)) {
+            width: 200px;
+            height: 200px;
+          }
         }
 
         .acteur_biographie {
-            text-align: justify;
-            height: 300px;
-            overflow: hidden;
-            margin: 15px;
+          text-align: justify;
+          height: 300px;
+          overflow: hidden;
+          margin: 15px;
+
+          @media (max-width: map-get($breakpoints, mobile)) {
+            width: 300px;
+            height: 200px;
+            overflow-y: scroll;
+            scrollbar-color: rgb(228, 15, 15) rgb(255, 247, 15);
+            scrollbar-width: thin;
+          }
         }
       }
 
       .acteur_position {
-          flex-direction: row-reverse;
+        flex-direction: row-reverse;
       }
     }
   }

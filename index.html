@@ -15,7 +15,7 @@
 <body>
   <div class="container">
     <header>
-      <div>
+      <div id="title">
         <h1>Everybody loves Raymond</h1>
         <h2>Tout le monde aime Raymond</h2>
       </div>
@@ -24,27 +24,27 @@
         <ul id="menu">
           <a href="#histoire">
             <li><i class="fas fa-book"></i>
-              Histoire</li>
+              <span>Histoire</span></li>
           </a>
           <a href="#personnages">
             <li><i class="far fa-address-card"></i>
-              Personnages</li>
+              <span>Personnages</span></li>
           </a>
           <a href="#acteurs">
             <li><i class="fas fa-theater-masks"></i>
-              Acteurs</li>
+              <span>Acteurs</span></li>
           </a>
           <a href="#personnages_secondaires">
             <li><i class="far fa-address-book"></i>
-              Personnages secondaires</li>
+              <span>Personnages secondaires</span></li>
           </a>
           <a href="#episodes">
             <li><i class="fas fa-tv"></i>
-              épisodes</li>
+              <span>Episodes</span></li>
           </a>
           <a href="quiz.html">
             <li><i class="far fa-question-circle"></i>
-              Quiz</li>
+              <span>Quiz</span></li>
           </a>
         </ul>
       </nav>
@@ -73,7 +73,7 @@
       <div class="nom">Robert</div>
     </div>
     <div id="photo_amy">
-      <img src="./images/amy/amy.jpg" alt="Amy" class="amy" />
+      <img src="./images/amy/amy3.jpg" alt="Amy" class="amy" />
       <div class="nom">Amy</div>
     </div>
   </section>
@@ -94,37 +94,118 @@
       <h3>personnages</h3>
       <div id="disposition_personnages">
         <div class="first_row">
-          <div id="personnage_ray">
-            <img src="./images/ray/ray5.jpg" alt="Ray" class="photo_personnage" />
-            <h4>Raymond "Ray" Barone</h4>
-            <p>journalist sportif à Newsday</p>
+          <div id="personnage_ray" class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/ray/ray5.jpg" alt="Ray" class="photo_personnage" />
+                <h4>Raymond "Ray" Barone</h4>
+                <p>journalist sportif à Newsday</p>
+              </div>
+              <div class="flip-card-back">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel sapien faucibus, fringilla massa
+                non, tempus enim. Integer mattis lorem et elit elementum, et egestas dui rutrum. Aliquam eu nisl dictum,
+                fringilla mi sit amet, mattis sem. Cras ac sagittis velit. In ullamcorper euismod justo, interdum
+                pharetra odio pharetra eu. Phasellus purus felis, blandit tempor malesuada non, finibus id ipsum. Mauris
+                et vulputate tortor. Duis iaculis, neque vel luctus molestie, nibh augue molestie ligula, nec mattis
+                lorem nisi ac sem. In vulputate iaculis erat non vehicula.
+              </div>
+            </div>
+
           </div>
-          <div id="personnage_debra">
-            <img src="./images/debra/debra5.jpg" alt="Debra" class="photo_personnage" />
-            <h4>Deborah "Debra" Barone</h4>
-            <p>femme au foyer</p>
+          <div id="personnage_debra" class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/debra/debra5.jpg" alt="Debra" class="photo_personnage" />
+                <h4>Deborah "Debra" Barone</h4>
+                <p>femme au foyer</p>
+              </div>
+              <div class="flip-card-back">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel sapien faucibus, fringilla massa
+                non, tempus enim. Integer mattis lorem et elit elementum, et egestas dui rutrum. Aliquam eu nisl dictum,
+                fringilla mi sit amet, mattis sem. Cras ac sagittis velit. In ullamcorper euismod justo, interdum
+                pharetra odio pharetra eu. Phasellus purus felis, blandit tempor malesuada non, finibus id ipsum. Mauris
+                et vulputate tortor. Duis iaculis, neque vel luctus molestie, nibh augue molestie ligula, nec mattis
+                lorem nisi ac sem. In vulputate iaculis erat non vehicula.
+              </div>
+            </div>
           </div>
-          <div id="personnage_marie">
-            <img src="./images/marie/marie5.jpg" alt="Marie" class="photo_personnage" />
-            <h4>Marie Barone</h4>
-            <p>mama italienne</p>
+          <div id="personnage_marie" class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/marie/marie5.jpg" alt="Marie" class="photo_personnage" />
+                <h4>Marie Barone</h4>
+                <p>mama italienne</p>
+              </div>
+              <div class="flip-card-back">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel sapien faucibus, fringilla massa
+                non, tempus enim. Integer mattis lorem et elit elementum, et egestas dui rutrum. Aliquam eu nisl dictum,
+                fringilla mi sit amet, mattis sem. Cras ac sagittis velit. In ullamcorper euismod justo, interdum
+                pharetra odio pharetra eu. Phasellus purus felis, blandit tempor malesuada non, finibus id ipsum. Mauris
+                et vulputate tortor. Duis iaculis, neque vel luctus molestie, nibh augue molestie ligula, nec mattis
+                lorem nisi ac sem. In vulputate iaculis erat non vehicula.
+              </div>
+            </div>
+
+
           </div>
         </div>
         <div class="second_row">
-          <div id="personnage_frank">
-            <img src="./images/frank/frank4.jpg" alt="Frank" class="photo_personnage" />
-            <h4>Frank Barone</h4>
-            <p>retraité</p>
+          <div id="personnage_frank" class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/frank/frank4.jpg" alt="Frank" class="photo_personnage" />
+                <h4>Frank Barone</h4>
+                <p>retraité</p>
+              </div>
+              <div class="flip-card-back">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel sapien faucibus, fringilla massa
+                non,
+                tempus enim. Integer mattis lorem et elit elementum, et egestas dui rutrum. Aliquam eu nisl dictum,
+                fringilla mi sit amet, mattis sem. Cras ac sagittis velit. In ullamcorper euismod justo, interdum
+                pharetra
+                odio pharetra eu. Phasellus purus felis, blandit tempor malesuada non, finibus id ipsum. Mauris et
+                vulputate tortor. Duis iaculis, neque vel luctus molestie, nibh augue molestie ligula, nec mattis lorem
+                nisi ac sem. In vulputate iaculis erat non vehicula.
+              </div>
+            </div>
+
           </div>
-          <div id="personnage_robert">
-            <img src="./images/robert/robert4.jpg" alt="Robert" class="photo_personnage" />
-            <h4>Robert "Bobbi" Barone</h4>
-            <p>sergent de police</p>
+          <div id="personnage_robert" class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/robert/robert4.jpg" alt="Robert" class="photo_personnage" />
+                <h4>Robert "Bobbi" Barone</h4>
+                <p>sergent de police</p>
+              </div>
+              <div class="flip-card-back">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel sapien faucibus, fringilla massa
+                non,
+                tempus enim. Integer mattis lorem et elit elementum, et egestas dui rutrum. Aliquam eu nisl dictum,
+                fringilla mi sit amet, mattis sem. Cras ac sagittis velit. In ullamcorper euismod justo, interdum
+                pharetra
+                odio pharetra eu. Phasellus purus felis, blandit tempor malesuada non, finibus id ipsum. Mauris et
+                vulputate tortor. Duis iaculis, neque vel luctus molestie, nibh augue molestie ligula, nec mattis lorem
+                nisi ac sem. In vulputate iaculis erat non vehicula.
+              </div>
+            </div>
           </div>
-          <div id="personnage_amy">
-            <img src="./images/amy/amy3.jpg" alt="Amy" class="photo_personnage" />
-            <h4>Amy MacDougall Barone</h4>
-            <p>amie de Debra</p>
+          <div id="personnage_amy" class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/amy/amy3.jpg" alt="Amy" class="photo_personnage" />
+                <h4>Amy MacDougall Barone</h4>
+                <p>amie de Debra</p>
+              </div>
+              <div class="flip-card-back">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel sapien faucibus, fringilla massa
+                non, tempus enim. Integer mattis lorem et elit elementum, et egestas dui rutrum. Aliquam eu nisl dictum,
+                fringilla mi sit amet, mattis sem. Cras ac sagittis velit. In ullamcorper euismod justo, interdum
+                pharetra odio pharetra eu. Phasellus purus felis, blandit tempor malesuada non, finibus id ipsum. Mauris
+                et vulputate tortor. Duis iaculis, neque vel luctus molestie, nibh augue molestie ligula, nec mattis
+                lorem nisi ac sem. In vulputate iaculis erat non vehicula.
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -138,11 +219,30 @@
           <div class="acteur_portrait">
             <img src="./images/ray/ray_barone.jpg" alt="Ray Romano" class="acteur_photo" />
             <p class="acteur_biographie">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in commodo nibh, malesuada gravida dui. Vestibulum consectetur posuere ex eu sodales. In id justo id tortor gravida lacinia vel ut leo. Cras ligula ex, interdum sit amet accumsan eget, lacinia in metus. Nam imperdiet, lacus nec venenatis semper, nisi lacus viverra lacus, eu egestas metus ipsum vitae nibh. In ante eros, ornare vitae risus in, porttitor lobortis elit. Nam vestibulum justo et dui vulputate euismod. Vestibulum egestas vel leo porta dapibus. Mauris vitae eros vel nunc varius pharetra eu et neque.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in commodo nibh, malesuada gravida dui.
+              Vestibulum consectetur posuere ex eu sodales. In id justo id tortor gravida lacinia vel ut leo. Cras
+              ligula ex, interdum sit amet accumsan eget, lacinia in metus. Nam imperdiet, lacus nec venenatis semper,
+              nisi lacus viverra lacus, eu egestas metus ipsum vitae nibh. In ante eros, ornare vitae risus in,
+              porttitor lobortis elit. Nam vestibulum justo et dui vulputate euismod. Vestibulum egestas vel leo porta
+              dapibus. Mauris vitae eros vel nunc varius pharetra eu et neque.
 
-              Sed at lorem imperdiet, gravida purus malesuada, ultrices dui. Suspendisse eget scelerisque lacus, semper efficitur lectus. Sed mi purus, porttitor ac pulvinar sit amet, dapibus at ipsum. Duis molestie urna tortor. In ut ipsum felis. Nunc dictum bibendum placerat. Fusce sed ipsum iaculis, iaculis ipsum et, vulputate massa. Nulla a porttitor nisi. Curabitur suscipit neque mi, vel ultricies turpis feugiat at. Praesent congue nulla maximus velit fringilla, rhoncus iaculis quam vehicula. Duis varius magna euismod leo egestas ornare. Fusce posuere ipsum vel diam cursus tincidunt. Pellentesque commodo mattis nibh, nec lacinia enim malesuada eu. Curabitur est velit, porta sed dui eu, efficitur ullamcorper massa. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-              
-              Integer dignissim commodo erat. Suspendisse potenti. Fusce nec consectetur tellus. Proin et odio et libero tincidunt ornare sed sed nisl. Mauris ut sem sagittis, commodo libero id, bibendum nibh. Mauris a erat vitae nibh rutrum dapibus. Cras auctor purus sed neque porta, et eleifend arcu tempor. Phasellus sed diam a tellus porttitor lobortis id aliquam justo. Cras eu bibendum augue. Sed scelerisque sapien ac molestie fringilla. Suspendisse sed enim nec sem viverra dictum id in est. Curabitur sollicitudin eget lorem in gravida. Ut consequat ligula nec urna bibendum, ac auctor arcu blandit. Nulla sed justo vitae neque sodales varius eget sit amet orci. Donec placerat eu ante sit amet auctor. Duis ultricies fringilla ultricies. 
+              Sed at lorem imperdiet, gravida purus malesuada, ultrices dui. Suspendisse eget scelerisque lacus, semper
+              efficitur lectus. Sed mi purus, porttitor ac pulvinar sit amet, dapibus at ipsum. Duis molestie urna
+              tortor. In ut ipsum felis. Nunc dictum bibendum placerat. Fusce sed ipsum iaculis, iaculis ipsum et,
+              vulputate massa. Nulla a porttitor nisi. Curabitur suscipit neque mi, vel ultricies turpis feugiat at.
+              Praesent congue nulla maximus velit fringilla, rhoncus iaculis quam vehicula. Duis varius magna euismod
+              leo egestas ornare. Fusce posuere ipsum vel diam cursus tincidunt. Pellentesque commodo mattis nibh, nec
+              lacinia enim malesuada eu. Curabitur est velit, porta sed dui eu, efficitur ullamcorper massa. Interdum et
+              malesuada fames ac ante ipsum primis in faucibus.
+
+              Integer dignissim commodo erat. Suspendisse potenti. Fusce nec consectetur tellus. Proin et odio et libero
+              tincidunt ornare sed sed nisl. Mauris ut sem sagittis, commodo libero id, bibendum nibh. Mauris a erat
+              vitae nibh rutrum dapibus. Cras auctor purus sed neque porta, et eleifend arcu tempor. Phasellus sed diam
+              a tellus porttitor lobortis id aliquam justo. Cras eu bibendum augue. Sed scelerisque sapien ac molestie
+              fringilla. Suspendisse sed enim nec sem viverra dictum id in est. Curabitur sollicitudin eget lorem in
+              gravida. Ut consequat ligula nec urna bibendum, ac auctor arcu blandit. Nulla sed justo vitae neque
+              sodales varius eget sit amet orci. Donec placerat eu ante sit amet auctor. Duis ultricies fringilla
+              ultricies.
             </p>
           </div>
         </div>
@@ -152,9 +252,22 @@
           <div class="acteur_portrait acteur_position">
             <img src="./images/debra/patricia_heaton.jpg" alt="Patricia Heaton" class="acteur_photo" />
             <p class="acteur_biographie">
-              Integer dignissim commodo erat. Suspendisse potenti. Fusce nec consectetur tellus. Proin et odio et libero tincidunt ornare sed sed nisl. Mauris ut sem sagittis, commodo libero id, bibendum nibh. Mauris a erat vitae nibh rutrum dapibus. Cras auctor purus sed neque porta, et eleifend arcu tempor. Phasellus sed diam a tellus porttitor lobortis id aliquam justo. Cras eu bibendum augue. Sed scelerisque sapien ac molestie fringilla. Suspendisse sed enim nec sem viverra dictum id in est. Curabitur sollicitudin eget lorem in gravida. Ut consequat ligula nec urna bibendum, ac auctor arcu blandit. Nulla sed justo vitae neque sodales varius eget sit amet orci. Donec placerat eu ante sit amet auctor. Duis ultricies fringilla ultricies.
+              Integer dignissim commodo erat. Suspendisse potenti. Fusce nec consectetur tellus. Proin et odio et libero
+              tincidunt ornare sed sed nisl. Mauris ut sem sagittis, commodo libero id, bibendum nibh. Mauris a erat
+              vitae nibh rutrum dapibus. Cras auctor purus sed neque porta, et eleifend arcu tempor. Phasellus sed diam
+              a tellus porttitor lobortis id aliquam justo. Cras eu bibendum augue. Sed scelerisque sapien ac molestie
+              fringilla. Suspendisse sed enim nec sem viverra dictum id in est. Curabitur sollicitudin eget lorem in
+              gravida. Ut consequat ligula nec urna bibendum, ac auctor arcu blandit. Nulla sed justo vitae neque
+              sodales varius eget sit amet orci. Donec placerat eu ante sit amet auctor. Duis ultricies fringilla
+              ultricies.
 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius magna id erat molestie, sit amet ullamcorper orci mollis. Aenean euismod elementum pretium. Sed dictum velit quis massa imperdiet elementum. Vivamus finibus interdum ante, ac feugiat diam gravida ut. Curabitur at aliquam dui. Fusce feugiat ultrices arcu a maximus. Fusce sed sollicitudin urna, vitae ornare velit. Nam vulputate diam vitae pulvinar condimentum. Nam pulvinar turpis enim, eu volutpat velit convallis ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eros turpis, laoreet sit amet mollis vitae, tincidunt quis odio. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius magna id erat molestie, sit amet
+              ullamcorper orci mollis. Aenean euismod elementum pretium. Sed dictum velit quis massa imperdiet
+              elementum. Vivamus finibus interdum ante, ac feugiat diam gravida ut. Curabitur at aliquam dui. Fusce
+              feugiat ultrices arcu a maximus. Fusce sed sollicitudin urna, vitae ornare velit. Nam vulputate diam vitae
+              pulvinar condimentum. Nam pulvinar turpis enim, eu volutpat velit convallis ut. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eros turpis, laoreet sit
+              amet mollis vitae, tincidunt quis odio.
             </p>
           </div>
         </div>
@@ -164,11 +277,31 @@
           <div class="acteur_portrait">
             <img src="./images/marie/doris_roberts.jpg" alt="Doris Roberts" class="acteur_photo" />
             <p class="acteur_biographie">
-              Sed at lorem imperdiet, gravida purus malesuada, ultrices dui. Suspendisse eget scelerisque lacus, semper efficitur lectus. Sed mi purus, porttitor ac pulvinar sit amet, dapibus at ipsum. Duis molestie urna tortor. In ut ipsum felis. Nunc dictum bibendum placerat. Fusce sed ipsum iaculis, iaculis ipsum et, vulputate massa. Nulla a porttitor nisi. Curabitur suscipit neque mi, vel ultricies turpis feugiat at. Praesent congue nulla maximus velit fringilla, rhoncus iaculis quam vehicula. Duis varius magna euismod leo egestas ornare. Fusce posuere ipsum vel diam cursus tincidunt. Pellentesque commodo mattis nibh, nec lacinia enim malesuada eu. Curabitur est velit, porta sed dui eu, efficitur ullamcorper massa. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Sed at lorem imperdiet, gravida purus malesuada, ultrices dui. Suspendisse eget scelerisque lacus, semper
+              efficitur lectus. Sed mi purus, porttitor ac pulvinar sit amet, dapibus at ipsum. Duis molestie urna
+              tortor. In ut ipsum felis. Nunc dictum bibendum placerat. Fusce sed ipsum iaculis, iaculis ipsum et,
+              vulputate massa. Nulla a porttitor nisi. Curabitur suscipit neque mi, vel ultricies turpis feugiat at.
+              Praesent congue nulla maximus velit fringilla, rhoncus iaculis quam vehicula. Duis varius magna euismod
+              leo egestas ornare. Fusce posuere ipsum vel diam cursus tincidunt. Pellentesque commodo mattis nibh, nec
+              lacinia enim malesuada eu. Curabitur est velit, porta sed dui eu, efficitur ullamcorper massa. Interdum et
+              malesuada fames ac ante ipsum primis in faucibus.
 
-Integer dignissim commodo erat. Suspendisse potenti. Fusce nec consectetur tellus. Proin et odio et libero tincidunt ornare sed sed nisl. Mauris ut sem sagittis, commodo libero id, bibendum nibh. Mauris a erat vitae nibh rutrum dapibus. Cras auctor purus sed neque porta, et eleifend arcu tempor. Phasellus sed diam a tellus porttitor lobortis id aliquam justo. Cras eu bibendum augue. Sed scelerisque sapien ac molestie fringilla. Suspendisse sed enim nec sem viverra dictum id in est. Curabitur sollicitudin eget lorem in gravida. Ut consequat ligula nec urna bibendum, ac auctor arcu blandit. Nulla sed justo vitae neque sodales varius eget sit amet orci. Donec placerat eu ante sit amet auctor. Duis ultricies fringilla ultricies.
+              Integer dignissim commodo erat. Suspendisse potenti. Fusce nec consectetur tellus. Proin et odio et libero
+              tincidunt ornare sed sed nisl. Mauris ut sem sagittis, commodo libero id, bibendum nibh. Mauris a erat
+              vitae nibh rutrum dapibus. Cras auctor purus sed neque porta, et eleifend arcu tempor. Phasellus sed diam
+              a tellus porttitor lobortis id aliquam justo. Cras eu bibendum augue. Sed scelerisque sapien ac molestie
+              fringilla. Suspendisse sed enim nec sem viverra dictum id in est. Curabitur sollicitudin eget lorem in
+              gravida. Ut consequat ligula nec urna bibendum, ac auctor arcu blandit. Nulla sed justo vitae neque
+              sodales varius eget sit amet orci. Donec placerat eu ante sit amet auctor. Duis ultricies fringilla
+              ultricies.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius magna id erat molestie, sit amet ullamcorper orci mollis. Aenean euismod elementum pretium. Sed dictum velit quis massa imperdiet elementum. Vivamus finibus interdum ante, ac feugiat diam gravida ut. Curabitur at aliquam dui. Fusce feugiat ultrices arcu a maximus. Fusce sed sollicitudin urna, vitae ornare velit. Nam vulputate diam vitae pulvinar condimentum. Nam pulvinar turpis enim, eu volutpat velit convallis ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eros turpis, laoreet sit amet mollis vitae, tincidunt quis odio. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius magna id erat molestie, sit amet
+              ullamcorper orci mollis. Aenean euismod elementum pretium. Sed dictum velit quis massa imperdiet
+              elementum. Vivamus finibus interdum ante, ac feugiat diam gravida ut. Curabitur at aliquam dui. Fusce
+              feugiat ultrices arcu a maximus. Fusce sed sollicitudin urna, vitae ornare velit. Nam vulputate diam vitae
+              pulvinar condimentum. Nam pulvinar turpis enim, eu volutpat velit convallis ut. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eros turpis, laoreet sit
+              amet mollis vitae, tincidunt quis odio.
             </p>
           </div>
         </div>
@@ -178,9 +311,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius magna id 
           <div class="acteur_portrait acteur_position">
             <img src="./images/frank/peter_boyle.jpg" alt="Peter Boyle" class="acteur_photo" />
             <p class="acteur_biographie">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius magna id erat molestie, sit amet ullamcorper orci mollis. Aenean euismod elementum pretium. Sed dictum velit quis massa imperdiet elementum. Vivamus finibus interdum ante, ac feugiat diam gravida ut. Curabitur at aliquam dui. Fusce feugiat ultrices arcu a maximus. Fusce sed sollicitudin urna, vitae ornare velit. Nam vulputate diam vitae pulvinar condimentum. Nam pulvinar turpis enim, eu volutpat velit convallis ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eros turpis, laoreet sit amet mollis vitae, tincidunt quis odio.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius magna id erat molestie, sit amet
+              ullamcorper orci mollis. Aenean euismod elementum pretium. Sed dictum velit quis massa imperdiet
+              elementum. Vivamus finibus interdum ante, ac feugiat diam gravida ut. Curabitur at aliquam dui. Fusce
+              feugiat ultrices arcu a maximus. Fusce sed sollicitudin urna, vitae ornare velit. Nam vulputate diam vitae
+              pulvinar condimentum. Nam pulvinar turpis enim, eu volutpat velit convallis ut. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eros turpis, laoreet sit
+              amet mollis vitae, tincidunt quis odio.
 
-              Fusce sed elementum lorem, ut pretium tortor. Quisque aliquam ante non posuere viverra. Aliquam rutrum metus urna, ut blandit ex ultrices ut. Sed libero elit, sollicitudin nec ante eu, facilisis pulvinar ex. Nulla facilisi. Nunc et arcu consequat, auctor purus non, semper sem. Aenean suscipit consequat dictum. Vivamus lacinia orci a nisl cursus pulvinar. Vivamus nec quam libero. Fusce efficitur est nec vehicula aliquet. 
+              Fusce sed elementum lorem, ut pretium tortor. Quisque aliquam ante non posuere viverra. Aliquam rutrum
+              metus urna, ut blandit ex ultrices ut. Sed libero elit, sollicitudin nec ante eu, facilisis pulvinar ex.
+              Nulla facilisi. Nunc et arcu consequat, auctor purus non, semper sem. Aenean suscipit consequat dictum.
+              Vivamus lacinia orci a nisl cursus pulvinar. Vivamus nec quam libero. Fusce efficitur est nec vehicula
+              aliquet.
             </p>
           </div>
         </div>
@@ -190,11 +333,31 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius magna id 
           <div class="acteur_portrait">
             <img src="./images/robert/brad_garrett.jpg" alt="Brad Garrett" class="acteur_photo" />
             <p class="acteur_biographie">
-              Sed at lorem imperdiet, gravida purus malesuada, ultrices dui. Suspendisse eget scelerisque lacus, semper efficitur lectus. Sed mi purus, porttitor ac pulvinar sit amet, dapibus at ipsum. Duis molestie urna tortor. In ut ipsum felis. Nunc dictum bibendum placerat. Fusce sed ipsum iaculis, iaculis ipsum et, vulputate massa. Nulla a porttitor nisi. Curabitur suscipit neque mi, vel ultricies turpis feugiat at. Praesent congue nulla maximus velit fringilla, rhoncus iaculis quam vehicula. Duis varius magna euismod leo egestas ornare. Fusce posuere ipsum vel diam cursus tincidunt. Pellentesque commodo mattis nibh, nec lacinia enim malesuada eu. Curabitur est velit, porta sed dui eu, efficitur ullamcorper massa. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Sed at lorem imperdiet, gravida purus malesuada, ultrices dui. Suspendisse eget scelerisque lacus, semper
+              efficitur lectus. Sed mi purus, porttitor ac pulvinar sit amet, dapibus at ipsum. Duis molestie urna
+              tortor. In ut ipsum felis. Nunc dictum bibendum placerat. Fusce sed ipsum iaculis, iaculis ipsum et,
+              vulputate massa. Nulla a porttitor nisi. Curabitur suscipit neque mi, vel ultricies turpis feugiat at.
+              Praesent congue nulla maximus velit fringilla, rhoncus iaculis quam vehicula. Duis varius magna euismod
+              leo egestas ornare. Fusce posuere ipsum vel diam cursus tincidunt. Pellentesque commodo mattis nibh, nec
+              lacinia enim malesuada eu. Curabitur est velit, porta sed dui eu, efficitur ullamcorper massa. Interdum et
+              malesuada fames ac ante ipsum primis in faucibus.
 
-              Integer dignissim commodo erat. Suspendisse potenti. Fusce nec consectetur tellus. Proin et odio et libero tincidunt ornare sed sed nisl. Mauris ut sem sagittis, commodo libero id, bibendum nibh. Mauris a erat vitae nibh rutrum dapibus. Cras auctor purus sed neque porta, et eleifend arcu tempor. Phasellus sed diam a tellus porttitor lobortis id aliquam justo. Cras eu bibendum augue. Sed scelerisque sapien ac molestie fringilla. Suspendisse sed enim nec sem viverra dictum id in est. Curabitur sollicitudin eget lorem in gravida. Ut consequat ligula nec urna bibendum, ac auctor arcu blandit. Nulla sed justo vitae neque sodales varius eget sit amet orci. Donec placerat eu ante sit amet auctor. Duis ultricies fringilla ultricies.
-              
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius magna id erat molestie, sit amet ullamcorper orci mollis. Aenean euismod elementum pretium. Sed dictum velit quis massa imperdiet elementum. Vivamus finibus interdum ante, ac feugiat diam gravida ut. Curabitur at aliquam dui. Fusce feugiat ultrices arcu a maximus. Fusce sed sollicitudin urna, vitae ornare velit. Nam vulputate diam vitae pulvinar condimentum. Nam pulvinar turpis enim, eu volutpat velit convallis ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eros turpis, laoreet sit amet mollis vitae, tincidunt quis odio. 
+              Integer dignissim commodo erat. Suspendisse potenti. Fusce nec consectetur tellus. Proin et odio et libero
+              tincidunt ornare sed sed nisl. Mauris ut sem sagittis, commodo libero id, bibendum nibh. Mauris a erat
+              vitae nibh rutrum dapibus. Cras auctor purus sed neque porta, et eleifend arcu tempor. Phasellus sed diam
+              a tellus porttitor lobortis id aliquam justo. Cras eu bibendum augue. Sed scelerisque sapien ac molestie
+              fringilla. Suspendisse sed enim nec sem viverra dictum id in est. Curabitur sollicitudin eget lorem in
+              gravida. Ut consequat ligula nec urna bibendum, ac auctor arcu blandit. Nulla sed justo vitae neque
+              sodales varius eget sit amet orci. Donec placerat eu ante sit amet auctor. Duis ultricies fringilla
+              ultricies.
+
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius magna id erat molestie, sit amet
+              ullamcorper orci mollis. Aenean euismod elementum pretium. Sed dictum velit quis massa imperdiet
+              elementum. Vivamus finibus interdum ante, ac feugiat diam gravida ut. Curabitur at aliquam dui. Fusce
+              feugiat ultrices arcu a maximus. Fusce sed sollicitudin urna, vitae ornare velit. Nam vulputate diam vitae
+              pulvinar condimentum. Nam pulvinar turpis enim, eu volutpat velit convallis ut. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eros turpis, laoreet sit
+              amet mollis vitae, tincidunt quis odio.
             </p>
           </div>
         </div>
@@ -204,7 +367,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius magna id 
           <div class="acteur_portrait acteur_position">
             <img src="./images/amy/amy4.jpg" alt="Monica Horan" class="acteur_photo" />
             <p class="acteur_biographie">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in commodo nibh, malesuada gravida dui. Vestibulum consectetur posuere ex eu sodales. In id justo id tortor gravida lacinia vel ut leo. Cras ligula ex, interdum sit amet accumsan eget, lacinia in metus. Nam imperdiet, lacus nec venenatis semper, nisi lacus viverra lacus, eu egestas metus ipsum vitae nibh. In ante eros, ornare vitae risus in, porttitor lobortis elit. Nam vestibulum justo et dui vulputate euismod. Vestibulum egestas vel leo porta dapibus. Mauris vitae eros vel nunc varius pharetra eu et neque. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in commodo nibh, malesuada gravida dui.
+              Vestibulum consectetur posuere ex eu sodales. In id justo id tortor gravida lacinia vel ut leo. Cras
+              ligula ex, interdum sit amet accumsan eget, lacinia in metus. Nam imperdiet, lacus nec venenatis semper,
+              nisi lacus viverra lacus, eu egestas metus ipsum vitae nibh. In ante eros, ornare vitae risus in,
+              porttitor lobortis elit. Nam vestibulum justo et dui vulputate euismod. Vestibulum egestas vel leo porta
+              dapibus. Mauris vitae eros vel nunc varius pharetra eu et neque.
             </p>
           </div>
         </div>
@@ -213,53 +381,101 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius magna id 
 
     <section id="personnages_secondaires">
       <h3>personnages secondaires</h3>
-      <div id="famille_debra">
+      <div class="personnages">
         <h4>famille de Debra</h4>
-        <div class="famille">
-          <div id="debra_mere">
-            <div id="presentation_lois">
-              <img src="./images/personnages_secondaires/katherine_helmond.jpg" alt="Lois" class="carte_recto" />
-              <div class="carte_verso">
+        <div class="perso_row">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/personnages_secondaires/katherine_helmond.jpg" alt="Lois" class="carte_recto" />
+              </div>
+              <div class="flip-card-back">
                 <h5>Katherine Helmond, Lois Whelan</h5>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel sapien faucibus, fringilla
+                  massa
+                  non, tempus enim. Integer mattis lorem et elit elementum, et egestas dui rutrum. Aliquam eu nisl
+                  dictum,
+                  fringilla mi sit amet, mattis sem. Cras ac sagittis velit. In ullamcorper euismod justo, interdum
+                  pharetra odio pharetra eu. Phasellus purus felis, blandit tempor malesuada non, finibus id ipsum.
+                  Mauris
+                  et vulputate tortor. Duis iaculis, neque vel luctus molestie, nibh augue molestie ligula, nec mattis
+                  lorem nisi ac sem. In vulputate iaculis erat non vehicula. </div>
               </div>
             </div>
           </div>
-          <div id="debra_pere">
-            <div id="presentation_warren">
-              <img src="./images/personnages_secondaires/robert_culp1.jpg" alt="Warren" class="carte_recto" />
-              <div class="carte_verso">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/personnages_secondaires/robert_culp1.jpg" alt="Warren" class="carte_recto" />
+              </div>
+              <div class="flip-card-back">
                 <h5>Robert Culp, Warren Whalen</h5>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel sapien faucibus, fringilla
+                  massa non, tempus enim. Integer mattis lorem et elit elementum, et egestas dui rutrum. Aliquam eu
+                  nisl
+                  dictum, fringilla mi sit amet, mattis sem. Cras ac sagittis velit. In ullamcorper euismod justo,
+                  interdum pharetra odio pharetra eu. Phasellus purus felis, blandit tempor malesuada non, finibus id
+                  ipsum. Mauris et vulputate tortor. Duis iaculis, neque vel luctus molestie, nibh augue molestie
+                  ligula, nec mattis lorem nisi ac sem. In vulputate iaculis erat non vehicula. </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="famille_amy">
+      <div class="personnages">
         <h4>famille d'Amy</h4>
-        <div class="famille">
-          <div id="amy_mere">
-            <div id="presentation_pat">
-              <img src="./images/personnages_secondaires/georgia_engel.jpg" alt="Pat" class="carte_recto" />
-              <div class="carte_verso">
+        <div class="perso_row">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/personnages_secondaires/georgia_engel.jpg" alt="Pat" class="carte_recto" />
+              </div>
+              <div class="flip-card-back">
                 <h5>Georgia Engel, Patricia "Pat" MacDougall</h5>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel sapien faucibus, fringilla
+                  massa
+                  non, tempus enim. Integer mattis lorem et elit elementum, et egestas dui rutrum. Aliquam eu nisl
+                  dictum,
+                  fringilla mi sit amet, mattis sem. Cras ac sagittis velit. In ullamcorper euismod justo, interdum
+                  pharetra odio pharetra eu. Phasellus purus felis, blandit tempor malesuada non, finibus id ipsum.
+                  Mauris
+                  et vulputate tortor. Duis iaculis, neque vel luctus molestie, nibh augue molestie ligula, nec mattis
+                  lorem nisi ac sem. In vulputate iaculis erat non vehicula. </div>
               </div>
             </div>
           </div>
-          <div id="amy_pere">
-            <div id="presentation_hank">
-              <img src="./images/personnages_secondaires/fred_willard1.jpg" alt="Hank" class="carte_recto" />
-              <div class="carte_verso">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/personnages_secondaires/fred_willard1.jpg" alt="Hank" class="carte_recto" />
+              </div>
+              <div class="flip-card-back">
                 <h5>Fred Willard, Hank MacDougall</h5>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel sapien faucibus, fringilla
+                  massa non, tempus enim. Integer mattis lorem et elit elementum, et egestas dui rutrum. Aliquam eu
+                  nisl
+                  dictum, fringilla mi sit amet, mattis sem. Cras ac sagittis velit. In ullamcorper euismod justo,
+                  interdum pharetra odio pharetra eu. Phasellus purus felis, blandit tempor malesuada non, finibus id
+                  ipsum. Mauris et vulputate tortor. Duis iaculis, neque vel luctus molestie, nibh augue molestie
+                  ligula, nec mattis lorem nisi ac sem. In vulputate iaculis erat non vehicula. </div>
               </div>
             </div>
           </div>
-          <div id="amy_frere">
-            <div id="presentation_peter">
-              <img src="./images/personnages_secondaires/peter_macdougall.jpg" alt="Peter" class="carte_recto" />
-              <div class="carte_verso">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./images/personnages_secondaires/peter_macdougall.jpg" alt="Peter" class="carte_recto" />
+              </div>
+              <div class="flip-card-back">
                 <h5>Chris Elliott, Peter MacDougall</h5>
-                <p>vendeur de bandes dessinées</p>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel sapien faucibus, fringilla
+                  massa non, tempus enim. Integer mattis lorem et elit elementum, et egestas dui rutrum. Aliquam eu
+                  nisl
+                  dictum, fringilla mi sit amet, mattis sem. Cras ac sagittis velit. In ullamcorper euismod justo,
+                  interdum pharetra odio pharetra eu. Phasellus purus felis, blandit tempor malesuada non, finibus id
+                  ipsum. Mauris et vulputate tortor. Duis iaculis, neque vel luctus molestie, nibh augue molestie
+                  ligula, nec mattis lorem nisi ac sem. In vulputate iaculis erat non vehicula. </div>
               </div>
             </div>
           </div>

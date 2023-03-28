@@ -1,6 +1,14 @@
 header {
   @include flex-center-column;
   align-items: center;
+  width: 100%;
+
+  #title {
+    @media (max-width: map-get($breakpoints, mobile)) {
+      width: 100%;
+    }
+  }
+
   h1 {
     color: #000000;
     font-family: sacramento, Arial, Helvetica, sans-serif;
@@ -8,6 +16,10 @@ header {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 40px;
+    @media (max-width: map-get($breakpoints, mobile)) {
+      font-size: 25px;
+      margin: 20px 0px;
+    }
   }
 
   h2 {
@@ -15,6 +27,10 @@ header {
     font-size: 30px;
     font-family: Alex + Brush, Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    @media (max-width: map-get($breakpoints, mobile)) {
+      font-size: 15px;
+      width: 100%;
+    }
   }
 
   #photo_groupe {
@@ -28,12 +44,15 @@ header {
     #menu {
       list-style-type: none;
       @include flex-space-around-row;
-      @media (max-width: map-get($breakpoints, mobile)) {
-          @include flex-center-column;
-      }
       li {
         font-size: 20px;
         font-weight: bold;
+
+        span {
+          @media (max-width: map-get($breakpoints, mobile)) {
+            display: none;
+          }
+        }
       }
       a {
         color: black;

@@ -30,31 +30,30 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 20px;
   color: #000000;
-  background: linear-gradient(#e8ec0f, #ec8c0f, #ec0f0f);
-  background-attachment: fixed;
+  background: linear-gradient(217deg, rgba(240, 11, 11, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgb(255, 234, 2), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgb(177, 105, 33), rgba(0, 0, 255, 0) 70.71%);
+  background-size: 400% 400%;
+  animation: changeColor 2s ease-in-out infinite;
 }
 
-.container {
-  width: 100%;
-  margin: auto;
-}
-@media screen and (min-width: ) {
-  .container {
-    width: 1394px;
+@keyframes changeColor {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
   }
 }
-
 .container {
-  width: 1394px;
-  margin: auto;
+  width: 1390px;
 }
-
-body {
-  font-family: "Raleway", "sans-serif";
-  color: #000000;
-  font-size: 12px;
-  font-weight: normal;
-  text-align: left;
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
 }
 
 header {
@@ -62,6 +61,12 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  header #title {
+    width: 100%;
+  }
 }
 header h1 {
   color: #000000;
@@ -71,11 +76,23 @@ header h1 {
   margin-top: 30px;
   margin-bottom: 40px;
 }
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 25px;
+    margin: 20px 0px;
+  }
+}
 header h2 {
   color: #000000;
   font-size: 30px;
   font-family: AlexBrush, Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+}
+@media (max-width: 767px) {
+  header h2 {
+    font-size: 15px;
+    width: 100%;
+  }
 }
 header #photo_groupe {
   margin: 15px 0px;
@@ -91,16 +108,14 @@ header nav #menu {
   flex-direction: row;
   justify-content: space-around;
 }
-@media (max-width: 767px) {
-  header nav #menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
 header nav #menu li {
   font-size: 20px;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  header nav #menu li span {
+    display: none;
+  }
 }
 header nav #menu a {
   color: black;
@@ -214,7 +229,7 @@ li {
   #acteurs .acteurs .acteur_debra:hover,
   #acteurs .acteurs .acteur_frank:hover,
   #acteurs .acteurs .acteur_amy:hover {
-    width: 80%;
+    width: 100%;
   }
 }
 #acteurs .acteurs .acteur_ray h4,
@@ -248,6 +263,17 @@ li {
   object-fit: cover;
   margin: 10px;
 }
+@media (max-width: 767px) {
+  #acteurs .acteurs .acteur_ray .acteur_portrait .acteur_photo,
+  #acteurs .acteurs .acteur_marie .acteur_portrait .acteur_photo,
+  #acteurs .acteurs .acteur_robert .acteur_portrait .acteur_photo,
+  #acteurs .acteurs .acteur_debra .acteur_portrait .acteur_photo,
+  #acteurs .acteurs .acteur_frank .acteur_portrait .acteur_photo,
+  #acteurs .acteurs .acteur_amy .acteur_portrait .acteur_photo {
+    width: 200px;
+    height: 200px;
+  }
+}
 #acteurs .acteurs .acteur_ray .acteur_portrait .acteur_biographie,
 #acteurs .acteurs .acteur_marie .acteur_portrait .acteur_biographie,
 #acteurs .acteurs .acteur_robert .acteur_portrait .acteur_biographie,
@@ -258,6 +284,20 @@ li {
   height: 300px;
   overflow: hidden;
   margin: 15px;
+}
+@media (max-width: 767px) {
+  #acteurs .acteurs .acteur_ray .acteur_portrait .acteur_biographie,
+  #acteurs .acteurs .acteur_marie .acteur_portrait .acteur_biographie,
+  #acteurs .acteurs .acteur_robert .acteur_portrait .acteur_biographie,
+  #acteurs .acteurs .acteur_debra .acteur_portrait .acteur_biographie,
+  #acteurs .acteurs .acteur_frank .acteur_portrait .acteur_biographie,
+  #acteurs .acteurs .acteur_amy .acteur_portrait .acteur_biographie {
+    width: 300px;
+    height: 200px;
+    overflow-y: scroll;
+    scrollbar-color: rgb(228, 15, 15) rgb(255, 247, 15);
+    scrollbar-width: thin;
+  }
 }
 #acteurs .acteurs .acteur_ray .acteur_position,
 #acteurs .acteurs .acteur_marie .acteur_position,
@@ -281,6 +321,11 @@ li {
 #episodes .dvd .season {
   width: 10%;
   margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  #episodes .dvd .season {
+    margin-bottom: 0;
+  }
 }
 #episodes .dvd .season a {
   text-decoration: none;
@@ -307,6 +352,11 @@ li {
   font-size: 25px;
   font-weight: 700;
   text-align: center;
+}
+@media (max-width: 767px) {
+  #histoire h3 {
+    line-height: 30px;
+  }
 }
 #histoire #resume {
   margin: 40px;
@@ -371,10 +421,20 @@ li {
   flex-wrap: wrap;
   margin: 20px;
 }
+@media (max-width: 767px) {
+  #personnages {
+    margin: 0;
+  }
+}
 #personnages h3 {
   font-size: 25px;
   color: #000000;
   text-align: center;
+}
+@media (max-width: 767px) {
+  #personnages h3 {
+    width: 100%;
+  }
 }
 #personnages #disposition_personnages {
   display: flex;
@@ -392,6 +452,12 @@ li {
 #personnages #disposition_personnages .first_row,
 #personnages #disposition_personnages .second_row {
   display: flex;
+}
+@media (max-width: 767px) {
+  #personnages #disposition_personnages .first_row,
+  #personnages #disposition_personnages .second_row {
+    flex-direction: column;
+  }
 }
 #personnages #disposition_personnages .first_row #personnage_ray,
 #personnages #disposition_personnages .first_row #personnage_debra,
@@ -465,6 +531,40 @@ li {
   padding: 10px 0px;
   text-align: center;
 }
+#personnages #disposition_personnages .first_row .flip-card,
+#personnages #disposition_personnages .second_row .flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+#personnages #disposition_personnages .first_row .flip-card .flip-card-inner,
+#personnages #disposition_personnages .second_row .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+#personnages #disposition_personnages .first_row .flip-card .flip-card-inner .flip-card-front,
+#personnages #disposition_personnages .first_row .flip-card .flip-card-inner .flip-card-back,
+#personnages #disposition_personnages .second_row .flip-card .flip-card-inner .flip-card-front,
+#personnages #disposition_personnages .second_row .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#personnages #disposition_personnages .first_row .flip-card .flip-card-inner .flip-card-back,
+#personnages #disposition_personnages .second_row .flip-card .flip-card-inner .flip-card-back {
+  background-color: #ec8c0f;
+  color: black;
+  transform: rotateY(180deg);
+}
+#personnages #disposition_personnages .first_row .flip-card:hover .flip-card-inner,
+#personnages #disposition_personnages .second_row .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
 #personnages_secondaires {
   display: flex;
@@ -478,53 +578,86 @@ li {
   padding: 20px 0px;
   text-align: center;
 }
-#personnages_secondaires #famille_debra,
-#personnages_secondaires #famille_amy {
+#personnages_secondaires .personnages {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#personnages_secondaires #famille_debra h4,
-#personnages_secondaires #famille_amy h4 {
+#personnages_secondaires .personnages h4 {
   font-family: lobster;
   font-size: 25px;
   text-align: center;
   padding: 20px;
 }
-#personnages_secondaires #famille_debra .famille,
-#personnages_secondaires #famille_amy .famille {
+#personnages_secondaires .personnages .perso_row {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 10px;
+  align-items: center;
 }
 @media (max-width: 767px) {
-  #personnages_secondaires #famille_debra .famille,
-  #personnages_secondaires #famille_amy .famille {
+  #personnages_secondaires .personnages .perso_row {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
-#personnages_secondaires #famille_debra .famille #debra_mere,
-#personnages_secondaires #famille_debra .famille #debra_pere,
-#personnages_secondaires #famille_debra .famille #amy_mere,
-#personnages_secondaires #famille_debra .famille #amy_pere,
-#personnages_secondaires #famille_debra .famille #amy_frere,
-#personnages_secondaires #famille_amy .famille #debra_mere,
-#personnages_secondaires #famille_amy .famille #debra_pere,
-#personnages_secondaires #famille_amy .famille #amy_mere,
-#personnages_secondaires #famille_amy .famille #amy_pere,
-#personnages_secondaires #famille_amy .famille #amy_frere {
-  margin: 5px;
+#personnages_secondaires .personnages .perso_row .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  margin: 15px;
+  border: 15px groove #ec0f0f;
+  perspective: 1000px;
+}
+#personnages_secondaires .personnages .perso_row .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+#personnages_secondaires .personnages .perso_row .flip-card .flip-card-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+@media (max-width: 767px) {
+  #personnages_secondaires .personnages .perso_row .flip-card .flip-card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+#personnages_secondaires .personnages .perso_row .flip-card .flip-card-inner .flip-card-front,
+#personnages_secondaires .personnages .perso_row .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#personnages_secondaires .personnages .perso_row .flip-card .flip-card-inner .carte_recto {
+  width: 100%;
+  height: 100%;
+}
+#personnages_secondaires .personnages .perso_row .flip-card .flip-card-inner .flip-card-back {
+  background-color: #ec8c0f;
+  transform: rotateY(180deg);
+}
+#personnages_secondaires .personnages .perso_row .flip-card .flip-card-inner .flip-card-back h5 {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 20px 0px;
 }
 
 #photos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 10px 20px 40px 20px;
 }
 @media (max-width: 767px) {
   #photos {
@@ -541,10 +674,19 @@ li {
 #photos #photo_amy {
   display: flex;
   flex-direction: column;
-  width: 10%;
+  width: 20%;
   height: 260px;
-  border: solid 3px #ec8c0f;
   align-items: center;
+}
+@media (max-width: 767px) {
+  #photos #photo_ray,
+  #photos #photo_debra,
+  #photos #photo_marie,
+  #photos #photo_frank,
+  #photos #photo_robert,
+  #photos #photo_amy {
+    width: 100%;
+  }
 }
 #photos #photo_ray .ray,
 #photos #photo_ray .debra,
@@ -586,39 +728,68 @@ li {
   height: 240px;
   object-fit: cover;
 }
+#photos #photo_ray .ray,
+#photos #photo_ray .marie,
+#photos #photo_ray .robert,
+#photos #photo_debra .ray,
+#photos #photo_debra .marie,
+#photos #photo_debra .robert,
+#photos #photo_marie .ray,
+#photos #photo_marie .marie,
+#photos #photo_marie .robert,
+#photos #photo_frank .ray,
+#photos #photo_frank .marie,
+#photos #photo_frank .robert,
+#photos #photo_robert .ray,
+#photos #photo_robert .marie,
+#photos #photo_robert .robert,
+#photos #photo_amy .ray,
+#photos #photo_amy .marie,
+#photos #photo_amy .robert {
+  transform: rotate(20deg);
+  border: groove 13px #e8ec0f;
+}
+#photos #photo_ray .debra,
+#photos #photo_ray .frank,
+#photos #photo_ray .amy,
+#photos #photo_debra .debra,
+#photos #photo_debra .frank,
+#photos #photo_debra .amy,
+#photos #photo_marie .debra,
+#photos #photo_marie .frank,
+#photos #photo_marie .amy,
+#photos #photo_frank .debra,
+#photos #photo_frank .frank,
+#photos #photo_frank .amy,
+#photos #photo_robert .debra,
+#photos #photo_robert .frank,
+#photos #photo_robert .amy,
+#photos #photo_amy .debra,
+#photos #photo_amy .frank,
+#photos #photo_amy .amy {
+  transform: rotate(-20deg);
+  border: groove 13px #e8ec0f;
+}
 #photos #photo_ray .nom,
 #photos #photo_debra .nom,
 #photos #photo_marie .nom,
 #photos #photo_frank .nom,
 #photos #photo_robert .nom,
 #photos #photo_amy .nom {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-right: 20px;
   font-family: Redressed;
   font-size: 25px;
 }
-
-#photos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
-#photos .photo_ray, #photos .photo_debra, #photos .photo_marie, #photos .photo_frank, #photos .photo_robert, #photos .photo_amy {
-  object-fit: cover;
-  width: 8%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  border: groove 13px gold;
-}
-#photos .photo_ray .ray, #photos .photo_ray .debra, #photos .photo_ray .marie, #photos .photo_ray .frank, #photos .photo_ray .robert, #photos .photo_ray .amy, #photos .photo_debra .ray, #photos .photo_debra .debra, #photos .photo_debra .marie, #photos .photo_debra .frank, #photos .photo_debra .robert, #photos .photo_debra .amy, #photos .photo_marie .ray, #photos .photo_marie .debra, #photos .photo_marie .marie, #photos .photo_marie .frank, #photos .photo_marie .robert, #photos .photo_marie .amy, #photos .photo_frank .ray, #photos .photo_frank .debra, #photos .photo_frank .marie, #photos .photo_frank .frank, #photos .photo_frank .robert, #photos .photo_frank .amy, #photos .photo_robert .ray, #photos .photo_robert .debra, #photos .photo_robert .marie, #photos .photo_robert .frank, #photos .photo_robert .robert, #photos .photo_robert .amy, #photos .photo_amy .ray, #photos .photo_amy .debra, #photos .photo_amy .marie, #photos .photo_amy .frank, #photos .photo_amy .robert, #photos .photo_amy .amy {
-  width: 97%;
-  height: 150px;
-  position: center;
+@media (max-width: 767px) {
+  #photos #photo_ray .nom,
+  #photos #photo_debra .nom,
+  #photos #photo_marie .nom,
+  #photos #photo_frank .nom,
+  #photos #photo_robert .nom,
+  #photos #photo_amy .nom {
+    display: none;
+  }
 }
 
 #quiz, #tests {

@@ -4,7 +4,10 @@
         color: #000000;
         font-size: 25px;
         font-weight: 700;
-        text-align: center
+        text-align: center;
+        @media (max-width: map-get($breakpoints, mobile)) {
+            line-height: 30px;
+        }
     }
 
     #resume {
