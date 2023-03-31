@@ -1,0 +1,44 @@
+#list_episodes {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-size: 25px;
+        text-align: center;   
+        margin-bottom: 20px;  
+    } 
+    .list_dvd {
+            display: flex;
+            flex-direction: column;
+
+            .dvd_section {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+               .list_season {
+                display: flex;
+                flex-direction: column;
+                width: 33%;
+
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                .season_photo {
+                    width: 250px;
+                    height: 300px;
+                    object-fit: contain;
+                }
+
+                button {
+                    width: 60%;
+                    padding: 5px;
+                    background-color: $color3;
+                    margin: 5px auto;
+                }
+               }
+            }
+        }
+}
