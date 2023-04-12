@@ -1,5 +1,5 @@
 let beginner = 0;
-function automaticImg() {
+const automaticImg = function() {
     setTimeout(automaticImg, 2300)
     let imageries
     const img = document.querySelectorAll('.img_robert');

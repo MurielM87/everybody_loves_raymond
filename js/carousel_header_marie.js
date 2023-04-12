@@ -1,5 +1,5 @@
 let erste = 0;
-function automaticImages() {
+const automaticImages = function() {
     setTimeout(automaticImages, 2900)
     let bilder
     const img = document.querySelectorAll('.img_marie');

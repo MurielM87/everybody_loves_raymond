@@ -1,5 +1,5 @@
 let first = 0;
-function automaticPictures() {
+const automaticPictures = function() {
     setTimeout(automaticPictures, 2800)
     let pictures
     const img = document.querySelectorAll('.img_frank');

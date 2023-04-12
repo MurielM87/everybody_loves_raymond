@@ -438,6 +438,9 @@ li {
   background-color: #e8ec0f;
   margin: 5px auto;
 }
+#list_episodes .list_dvd .dvd_section .list_season button:hover {
+  color: #ec0f0f;
+}
 
 #personnages {
   display: flex;

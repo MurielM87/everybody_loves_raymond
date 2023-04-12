@@ -1,5 +1,5 @@
 let start = 0;
-function automaticSlider() {
+const automaticSlider = function() {
     setTimeout(automaticSlider, 2500)
     let images
     const img = document.querySelectorAll('.img_debra');

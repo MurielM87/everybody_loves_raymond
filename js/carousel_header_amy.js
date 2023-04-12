@@ -1,5 +1,5 @@
 let begin = 0;
-function automaticCarousel() {
+const automaticCarousel = function() {
     setTimeout(automaticCarousel, 2600)
     let image
     const img = document.querySelectorAll('.img_amy');

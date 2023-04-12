@@ -1,5 +1,5 @@
 let firstIndex = 0;
-function automaticSlide() {
+const automaticSlide = function() {
     setTimeout(automaticSlide, 2000)
     let pics;
     const img = document.querySelectorAll('.img_ray');
